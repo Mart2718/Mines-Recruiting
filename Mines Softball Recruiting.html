@@ -1,0 +1,1672 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mines Softball — Colorado School of Mines Recruiting</title>
+  <meta name="description" content="Join NCAA DII's elite program. Earn an engineering degree. Compete at the top level. Explore Mines Softball recruiting.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow+Condensed:wght@400;600;700&family=Barlow:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    img { display: block; max-width: 100%; }
+    a { text-decoration: none; }
+    button { font-family: inherit; }
+
+    :root {
+      --navy-deep:  #0B1A33;
+      --navy:       #122341;
+      --navy-mid:   #21314d;
+      --navy-blast: #09396C;
+      --navy-light: #879EC3;
+      --navy-pale:  #CFDCE9;
+      --gold:       #C8960C;
+      --gold-light: #F0B429;
+      --gold-pale:  #FFF8E7;
+      --silver:     #BDBCBC;
+      --silver-mid: #81848A;
+      --gray-warm:  #75757D;
+      --white:      #FFFFFF;
+      --off-white:  #F7F8FA;
+      --co-red:     #CC4628;
+      --fs-display: clamp(3rem, 7vw, 5.75rem);
+      --fs-h1:      clamp(2.25rem, 4vw, 3.25rem);
+      --fs-h2:      clamp(1.5rem, 2.5vw, 2rem);
+      --fs-stat:    clamp(2.5rem, 5vw, 4rem);
+      --fs-body-lg: 1.125rem;
+      --fs-body:    1rem;
+      --fs-small:   0.875rem;
+      --fs-eyebrow: 0.8125rem;
+    }
+
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Barlow', sans-serif; font-size: 1rem; line-height: 1.6; color: var(--navy-deep); background: var(--white); }
+    @media (max-width: 767px) { body { padding-bottom: 76px; } }
+
+    /* ── HEADER ─────────────────────────────────────────── */
+    .site-header {
+      background: var(--navy-deep);
+      padding: 12px 40px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+    }
+    .wordmark { font-family: 'Bebas Neue', sans-serif; font-size: 1.5rem; color: var(--white); letter-spacing: 0.06em; }
+    .wordmark em { color: var(--gold-light); font-style: normal; }
+    .header-links { display: flex; gap: 28px; align-items: center; }
+    .header-links a {
+      color: var(--silver);
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 600;
+      font-size: 0.8125rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      transition: color 0.2s;
+    }
+    .header-links a:hover { color: var(--white); }
+    .header-links .cta-link { color: var(--gold-light); }
+    @media (max-width: 600px) { .header-links { display: none; } .site-header { padding: 12px 24px; } }
+
+    /* ── HERO ───────────────────────────────────────────── */
+    .hero {
+      position: relative;
+      min-height: min(88vh, 760px);
+      display: flex;
+      align-items: flex-end;
+      overflow: hidden;
+      background: var(--navy-deep);
+    }
+    .hero-bg {
+      position: absolute;
+      inset: 0;
+      background: url('uploads/Post Season.png') center 25% / cover no-repeat;
+    }
+    .hero-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, rgba(11,26,51,0.30) 0%, rgba(11,26,51,0.92) 100%);
+    }
+    .hero-content {
+      position: relative;
+      z-index: 1;
+      max-width: 1200px;
+      width: 100%;
+      margin: 0 auto;
+      padding: 140px 48px 80px;
+    }
+    .hero-eyebrow {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 600;
+      font-size: var(--fs-eyebrow);
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--gold-light);
+      margin-bottom: 12px;
+    }
+    .hero-title {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: var(--fs-display);
+      color: var(--white);
+      line-height: 1.03;
+      letter-spacing: 0.02em;
+      max-width: 820px;
+      margin-bottom: 20px;
+    }
+    .hero-sub {
+      font-size: var(--fs-body-lg);
+      color: var(--navy-pale);
+      max-width: 560px;
+      line-height: 1.55;
+      margin-bottom: 36px;
+    }
+    .hero-ctas { display: flex; flex-wrap: wrap; gap: 16px; align-items: center; }
+    @media (max-width: 600px) { .hero-content { padding: 80px 24px 56px; } }
+
+    /* ── BUTTONS ────────────────────────────────────────── */
+    .btn-gold {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: var(--gold); color: var(--navy-deep);
+      font-family: 'Barlow Condensed', sans-serif; font-weight: 700;
+      font-size: 0.9375rem; letter-spacing: 0.07em; text-transform: uppercase;
+      padding: 13px 30px; border-radius: 4px; border: none; cursor: pointer;
+      transition: background 0.2s, transform 0.1s;
+    }
+    .btn-gold:hover { background: var(--gold-light); transform: translateY(-1px); }
+    .btn-gold:focus-visible { outline: 2px solid var(--gold-light); outline-offset: 3px; }
+    .btn-ghost {
+      display: inline-flex; align-items: center; gap: 8px;
+      color: var(--white); font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 600; font-size: 0.9375rem; letter-spacing: 0.07em;
+      text-transform: uppercase; border: none; background: none;
+      text-decoration: underline; text-underline-offset: 3px;
+      transition: color 0.2s; padding: 12px 0; cursor: pointer;
+    }
+    .btn-ghost:hover { color: var(--gold-light); }
+
+    /* ── TAB NAV ────────────────────────────────────────── */
+    .tab-nav {
+      position: sticky; top: 0; z-index: 100;
+      background: var(--navy);
+      border-bottom: 3px solid var(--navy-mid);
+    }
+    .tab-scroll {
+      max-width: 1200px; margin: 0 auto; padding: 0 32px;
+      display: flex; overflow-x: auto; scrollbar-width: none;
+    }
+    .tab-scroll::-webkit-scrollbar { display: none; }
+    .tab-btn {
+      flex-shrink: 0;
+      display: flex; align-items: center; gap: 8px;
+      padding: 17px 22px;
+      font-family: 'Barlow Condensed', sans-serif; font-weight: 600;
+      font-size: 0.9375rem; letter-spacing: 0.06em; text-transform: uppercase;
+      color: var(--silver); background: none; border: none;
+      border-bottom: 3px solid transparent; margin-bottom: -3px;
+      white-space: nowrap; cursor: pointer;
+      transition: color 0.2s, border-color 0.2s;
+    }
+    .tab-btn:hover { color: var(--white); }
+    .tab-btn.active { color: var(--white); border-bottom-color: var(--gold); }
+    .tab-btn:focus-visible { outline: 2px solid var(--gold); outline-offset: -2px; }
+    @media (max-width: 600px) { .tab-btn { padding: 14px 14px; font-size: 0.8125rem; } .tab-scroll { padding: 0 12px; } }
+
+    /* ── TAB PANELS ─────────────────────────────────────── */
+    .tab-panel { display: none; }
+    .tab-panel.active { display: block; }
+
+    /* ── SECTION SHELL ──────────────────────────────────── */
+    .sec { padding: 88px 48px; }
+    .sec--dark  { background: var(--navy-deep); color: var(--white); }
+    .sec--navy  { background: var(--navy);      color: var(--white); }
+    .sec--navy-mid { background: var(--navy-mid); color: var(--white); }
+    .sec--off   { background: var(--off-white); }
+    .sec--pale  { background: var(--navy-pale); }
+    .inner { max-width: 1200px; margin: 0 auto; }
+    @media (max-width: 767px) { .sec { padding: 56px 24px; } }
+
+    /* ── EYEBROW / TITLE / LEDE ─────────────────────────── */
+    .eyebrow {
+      font-family: 'Barlow Condensed', sans-serif; font-weight: 600;
+      font-size: var(--fs-eyebrow); letter-spacing: 0.22em; text-transform: uppercase;
+      color: var(--gold); margin-bottom: 10px;
+    }
+    .sec--dark .eyebrow, .sec--navy .eyebrow, .sec--navy-mid .eyebrow { color: var(--gold-light); }
+    .sec-title {
+      font-family: 'Bebas Neue', sans-serif; font-size: var(--fs-h1);
+      letter-spacing: 0.02em; line-height: 1.05; color: var(--navy-deep); margin-bottom: 12px;
+    }
+    .sec--dark .sec-title, .sec--navy .sec-title, .sec--navy-mid .sec-title { color: var(--white); }
+    .sec-lede {
+      font-size: var(--fs-body-lg); color: var(--gray-warm);
+      max-width: 680px; line-height: 1.55; margin-bottom: 48px;
+    }
+    .sec--dark .sec-lede, .sec--navy .sec-lede, .sec--navy-mid .sec-lede { color: var(--navy-pale); }
+
+    /* ── STAT GRID ──────────────────────────────────────── */
+    .stat-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; margin-bottom: 56px; }
+    .stat-card { background: var(--navy-blast); border-radius: 8px; padding: 36px 24px; text-align: center; }
+    .stat-card--lt { background: var(--white); box-shadow: 0 4px 16px rgba(11,26,51,0.08); border: 1px solid var(--navy-pale); }
+    .stat-num { font-family: 'Bebas Neue', sans-serif; font-size: var(--fs-stat); color: var(--gold-light); line-height: 1; letter-spacing: 0.02em; font-variant-numeric: tabular-nums; margin-bottom: 8px; }
+    .stat-card--lt .stat-num { color: var(--navy-blast); }
+    .stat-lbl { font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: 0.875rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--white); margin-bottom: 6px; }
+    .stat-card--lt .stat-lbl { color: var(--navy-mid); }
+    .stat-ctx { font-size: 0.8125rem; color: var(--silver); font-style: italic; }
+    .stat-card--lt .stat-ctx { color: var(--gray-warm); }
+
+    /* ── COACH ──────────────────────────────────────────── */
+    .coach-wrap { display: grid; grid-template-columns: 300px 1fr; gap: 64px; align-items: start; }
+    @media (max-width: 860px) { .coach-wrap { grid-template-columns: 1fr; gap: 32px; } }
+    .coach-photo { width: 100%; aspect-ratio: 1; object-fit: cover; object-position: top center; border-radius: 8px; border: 3px solid var(--gold); }
+    .coach-name { font-family: 'Bebas Neue', sans-serif; font-size: var(--fs-h1); color: var(--white); letter-spacing: 0.02em; line-height: 1; margin-bottom: 6px; }
+    .coach-title-tag { font-family: 'Barlow Condensed', sans-serif; font-weight: 600; font-size: 1rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--gold-light); margin-bottom: 20px; }
+    .coach-bio { color: var(--navy-pale); font-size: var(--fs-body-lg); line-height: 1.65; margin-bottom: 24px; }
+    .coach-bio p + p { margin-top: 14px; }
+    .coach-btns { display: flex; gap: 16px; flex-wrap: wrap; }
+
+    /* ── FACILITY ───────────────────────────────────────── */
+    .facility { border-radius: 8px; overflow: hidden; background: var(--navy-deep); margin-bottom: 24px; }
+    .facility-img-wrap { position: relative; aspect-ratio: 16/9; overflow: hidden; }
+    .facility-img-wrap img { width: 100%; height: 100%; object-fit: cover; }
+    .facility-overlay { position: absolute; inset: 0; background: linear-gradient(0deg, rgba(11,26,51,0.85) 0%, transparent 55%); }
+    .facility-label { position: absolute; bottom: 20px; left: 24px; font-family: 'Bebas Neue', sans-serif; font-size: clamp(1.5rem, 3vw, 2.25rem); color: var(--white); letter-spacing: 0.02em; }
+    .facility-facts { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); }
+    .ffact { padding: 20px 24px; border-right: 1px solid var(--navy-mid); border-top: 1px solid var(--navy-mid); }
+    .ffact:last-child { border-right: none; }
+    @media (max-width: 600px) { .ffact { border-right: none; } }
+    .ffact-lbl { font-family: 'Barlow Condensed', sans-serif; font-weight: 600; font-size: 0.75rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--gold-light); margin-bottom: 4px; }
+    .ffact-val { color: var(--white); font-size: 0.9375rem; line-height: 1.45; }
+
+    /* ── TWO COLUMN ─────────────────────────────────────── */
+    .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; align-items: start; }
+    @media (max-width: 760px) { .two-col { grid-template-columns: 1fr; } }
+
+    /* ── CTA BAND ───────────────────────────────────────── */
+    .cta-band { background: var(--navy-deep); border-top: 2px solid var(--gold); padding: 80px 48px; text-align: center; }
+    .cta-band-title { font-family: 'Bebas Neue', sans-serif; font-size: var(--fs-h1); color: var(--white); letter-spacing: 0.02em; margin-bottom: 12px; }
+    .cta-band-body { color: var(--silver); font-size: var(--fs-body-lg); max-width: 480px; margin: 0 auto 28px; line-height: 1.55; }
+    .cta-fine { display: block; margin-top: 12px; font-size: 0.8125rem; color: var(--silver-mid); }
+    @media (max-width: 600px) { .cta-band { padding: 56px 24px; } }
+
+    /* ── RANKING STRIP ──────────────────────────────────── */
+    .rank-strip { display: grid; grid-template-columns: repeat(4, 1fr); border-radius: 8px; overflow: hidden; border: 1px solid rgba(255,255,255,0.1); margin-bottom: 56px; }
+    @media (max-width: 700px) { .rank-strip { grid-template-columns: repeat(2, 1fr); } }
+    .rank-item { padding: 32px 20px; text-align: center; border-right: 1px solid rgba(255,255,255,0.1); }
+    .rank-item:last-child { border-right: none; }
+    @media (max-width: 700px) { .rank-item:nth-child(2n) { border-right: none; } .rank-item:nth-child(n+3) { border-top: 1px solid rgba(255,255,255,0.1); } }
+    .rank-num { font-family: 'Bebas Neue', sans-serif; font-size: var(--fs-stat); color: var(--gold-light); line-height: 1; letter-spacing: 0.02em; margin-bottom: 8px; }
+    .rank-desc { font-family: 'Barlow Condensed', sans-serif; font-weight: 600; font-size: 0.9375rem; color: var(--white); line-height: 1.3; margin-bottom: 6px; }
+    .rank-src { font-size: 0.8125rem; color: var(--silver-mid); }
+
+    /* ── ACHIEVE CARDS ──────────────────────────────────── */
+    .achieve-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
+    .achieve-card { background: var(--navy-mid); border-radius: 8px; padding: 28px 24px; border-top: 3px solid var(--gold); }
+    .achieve-card-title { font-family: 'Bebas Neue', sans-serif; font-size: 1.75rem; color: var(--gold-light); letter-spacing: 0.02em; margin-bottom: 10px; }
+    .achieve-card-body { color: var(--navy-pale); font-size: var(--fs-body); line-height: 1.6; }
+
+    /* ── PHOTO STRIP ────────────────────────────────────── */
+    .photo-strip { display: grid; overflow: hidden; }
+    .photo-strip img { width: 100%; height: 340px; object-fit: cover; display: block; transition: transform 0.5s ease; }
+    .photo-strip img:hover { transform: scale(1.03); }
+    .photo-strip--3 { grid-template-columns: repeat(3, 1fr); }
+    .photo-strip--2 { grid-template-columns: 2fr 1fr; }
+    @media (max-width: 600px) { .photo-strip--3, .photo-strip--2 { grid-template-columns: 1fr; } .photo-strip img { height: 220px; } }
+
+    /* ── MAJOR GRID ─────────────────────────────────────── */
+    .major-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+    @media (max-width: 900px) { .major-grid { grid-template-columns: repeat(2, 1fr); } }
+    @media (max-width: 560px) { .major-grid { grid-template-columns: 1fr; } }
+    .major-card { background: var(--white); border-radius: 8px; padding: 24px; box-shadow: 0 4px 16px rgba(11,26,51,0.07); border-bottom: 3px solid var(--gold); }
+    .major-cat { font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: 0.75rem; letter-spacing: 0.16em; text-transform: uppercase; color: var(--gold); margin-bottom: 12px; }
+    .major-list { list-style: none; }
+    .major-list li { display: flex; justify-content: space-between; align-items: baseline; gap: 8px; padding: 7px 0; border-bottom: 1px solid var(--navy-pale); font-size: 0.9rem; color: var(--navy-mid); }
+    .major-list li:last-child { border-bottom: none; }
+    .major-salary { font-family: 'Barlow Condensed', sans-serif; font-weight: 600; font-size: 0.8rem; color: var(--navy-blast); font-variant-numeric: tabular-nums; white-space: nowrap; }
+
+    /* ── INFO CARDS ─────────────────────────────────────── */
+    .info-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px; }
+    .info-card { background: var(--white); border-radius: 8px; padding: 28px 24px; box-shadow: 0 4px 16px rgba(11,26,51,0.07); border-top: 3px solid var(--gold); }
+    .info-card-title { font-family: 'Bebas Neue', sans-serif; font-size: 1.5rem; color: var(--navy-blast); letter-spacing: 0.02em; margin-bottom: 10px; }
+    .info-card-body { color: var(--gray-warm); font-size: var(--fs-body); line-height: 1.6; }
+
+    /* ── OUTCOME CARDS ──────────────────────────────────── */
+    .outcome-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; margin-bottom: 56px; }
+    @media (max-width: 560px) { .outcome-grid { grid-template-columns: 1fr; } }
+    .outcome-card { background: var(--navy-blast); border-radius: 8px; padding: 52px 32px; text-align: center; }
+    .outcome-num { font-family: 'Bebas Neue', sans-serif; font-size: clamp(3rem, 6vw, 4.5rem); color: var(--gold-light); line-height: 1; letter-spacing: 0.02em; margin-bottom: 10px; }
+    .outcome-lbl { font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: 1rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--white); margin-bottom: 8px; }
+    .outcome-ctx { font-size: 0.8125rem; color: var(--silver); font-style: italic; }
+
+    /* ── TESTIMONIAL ────────────────────────────────────── */
+    .testimonial { background: var(--gold-pale); border-left: 4px solid var(--gold); border-radius: 0 8px 8px 0; padding: 32px 40px; max-width: 760px; margin: 56px auto; }
+    .testimonial-quote { font-size: var(--fs-body-lg); font-style: italic; color: var(--navy-deep); line-height: 1.65; margin-bottom: 16px; }
+    .testimonial-attr { font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: 0.8125rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--navy-blast); }
+
+    /* ── EMPLOYER TAGS ──────────────────────────────────── */
+    .employer-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 10px; margin-bottom: 48px; }
+    .employer-tag { background: var(--off-white); border: 1px solid var(--navy-pale); border-radius: 6px; padding: 14px 12px; text-align: center; font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: 0.875rem; letter-spacing: 0.05em; color: var(--navy-mid); }
+
+    /* ── GOLDEN PANELS ──────────────────────────────────── */
+    .golden-panels { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+    @media (max-width: 860px) { .golden-panels { grid-template-columns: 1fr; } }
+    .golden-panel { border-radius: 8px; overflow: hidden; background: var(--navy-deep); }
+    .golden-panel-imgwrap { overflow: hidden; }
+    .golden-panel-imgwrap img { width: 100%; aspect-ratio: 4/3; object-fit: cover; display: block; transition: transform 0.45s; }
+    .golden-panel:hover .golden-panel-imgwrap img { transform: scale(1.04); }
+    .golden-panel-body { padding: 20px; }
+    .golden-panel-title { font-family: 'Bebas Neue', sans-serif; font-size: 1.5rem; color: var(--white); letter-spacing: 0.02em; margin-bottom: 6px; }
+    .golden-panel-desc { font-size: var(--fs-small); color: var(--navy-pale); line-height: 1.5; }
+
+    /* ── TRADITION CARDS ────────────────────────────────── */
+    .tradition-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px; }
+    .tradition-card { background: var(--white); border-radius: 8px; overflow: hidden; box-shadow: 0 4px 16px rgba(11,26,51,0.08); }
+    .tradition-card img { width: 100%; aspect-ratio: 16/9; object-fit: cover; display: block; }
+    .tradition-card-body { padding: 24px; }
+    .tradition-card-title { font-family: 'Bebas Neue', sans-serif; font-size: 1.875rem; color: var(--navy-deep); letter-spacing: 0.02em; margin-bottom: 8px; }
+    .tradition-card-desc { font-size: var(--fs-body); color: var(--gray-warm); line-height: 1.6; }
+
+    /* ── CAMPUS STATS ───────────────────────────────────── */
+    .campus-stats { display: grid; grid-template-columns: repeat(4, 1fr); text-align: center; }
+    @media (max-width: 700px) { .campus-stats { grid-template-columns: repeat(2, 1fr); } }
+    .campus-stat { padding: 36px 16px; border-right: 1px solid var(--navy-pale); }
+    .campus-stat:last-child { border-right: none; }
+    @media (max-width: 700px) { .campus-stat:nth-child(2n) { border-right: none; } .campus-stat:nth-child(n+3) { border-top: 1px solid var(--navy-pale); } }
+    .campus-stat-num { font-family: 'Bebas Neue', sans-serif; font-size: clamp(2rem, 4vw, 3rem); color: var(--navy-blast); line-height: 1; margin-bottom: 6px; }
+    .campus-stat-lbl { font-family: 'Barlow Condensed', sans-serif; font-weight: 600; font-size: 0.8125rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gray-warm); }
+
+    /* ── R1 BADGE ───────────────────────────────────────── */
+    .r1-badge { display: inline-flex; align-items: center; background: var(--gold); color: var(--navy-deep); font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: 0.75rem; letter-spacing: 0.12em; text-transform: uppercase; padding: 5px 14px; border-radius: 4px; margin-bottom: 12px; }
+
+    /* ── FOOTER ─────────────────────────────────────────── */
+    .footer { background: var(--navy-deep); border-top: 3px solid var(--gold); padding: 72px 48px 40px; }
+    .footer-inner { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 64px; margin-bottom: 48px; }
+    @media (max-width: 700px) { .footer-inner { grid-template-columns: 1fr; gap: 40px; } .footer { padding: 48px 24px 32px; } }
+    .footer-wordmark { font-family: 'Bebas Neue', sans-serif; font-size: 2rem; color: var(--white); letter-spacing: 0.05em; margin-bottom: 12px; }
+    .footer-wordmark em { color: var(--gold-light); font-style: normal; }
+    .footer-tagline { color: var(--silver); font-size: var(--fs-small); line-height: 1.6; margin-bottom: 20px; max-width: 340px; }
+    .footer-heading { font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: 0.75rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--gold-light); margin-bottom: 16px; }
+    .footer-links { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+    .footer-links a { color: var(--silver); font-size: var(--fs-small); transition: color 0.2s; }
+    .footer-links a:hover { color: var(--white); }
+    .footer-bottom { max-width: 1200px; margin: 0 auto; padding-top: 24px; border-top: 1px solid var(--navy-mid); display: flex; justify-content: space-between; flex-wrap: wrap; gap: 8px; }
+    .footer-bottom p { color: var(--silver-mid); font-size: 0.8125rem; }
+
+    /* ── MOBILE CTA ─────────────────────────────────────── */
+    .mobile-cta { display: none; position: fixed; bottom: 0; left: 0; right: 0; z-index: 200; background: var(--navy-deep); border-top: 2px solid var(--gold); padding: 12px 20px; align-items: center; justify-content: space-between; gap: 12px; }
+    @media (max-width: 767px) { .mobile-cta { display: flex; } }
+    .mobile-cta-text { font-family: 'Barlow Condensed', sans-serif; font-weight: 600; font-size: 0.9375rem; color: var(--white); letter-spacing: 0.04em; }
+    .mobile-cta-close { background: none; border: none; color: var(--silver); font-size: 1.1rem; padding: 4px 8px; cursor: pointer; flex-shrink: 0; }
+
+    /* ── GOLD ACCENT RULE ───────────────────────────────── */
+    .gold-rule { height: 2px; background: var(--gold); border: none; margin: 56px 0; }
+
+    /* ── ACTION GALLERY ─────────────────────────────────── */
+    .action-gallery { display:grid; grid-template-columns:1.45fr 1fr; overflow:hidden; }
+    .ag-left { position:relative; overflow:hidden; min-height:520px; }
+    .ag-left img { width:100%; height:100%; object-fit:cover; object-position:center 22%; display:block; transition:transform 0.5s; }
+    .ag-left:hover img { transform:scale(1.03); }
+    .ag-caption { position:absolute; bottom:0; left:0; right:0; padding:20px 28px; background:linear-gradient(0deg,rgba(11,26,51,0.92) 0%,transparent 100%); }
+    .ag-caption h3 { font-family:'Bebas Neue',sans-serif; font-size:1.5rem; color:var(--white); letter-spacing:0.02em; margin-bottom:2px; }
+    .ag-caption p { font-size:0.8125rem; color:var(--silver); }
+    .ag-right { display:grid; grid-template-rows:1fr 1fr 1fr; }
+    .ag-right--grid2x2 { grid-template-columns:1fr 1fr; grid-template-rows:260px 260px; }
+    .champ-tag { background:rgba(200,150,12,0.18); border:1px solid var(--gold); color:var(--gold-light); font-family:'Barlow Condensed',sans-serif; font-size:0.875rem; font-weight:600; padding:8px 16px; border-radius:4px; letter-spacing:0.04em; display:inline-block; }
+    .ag-cell { overflow:hidden; position:relative; }
+    .ag-cell img { width:100%; height:100%; object-fit:cover; display:block; transition:transform 0.5s; }
+    .ag-cell:hover img { transform:scale(1.04); }
+    .ag-cta-cell { background:var(--navy-blast); display:flex; flex-direction:column; align-items:center; justify-content:center; gap:10px; padding:24px; text-align:center; }
+    .ag-cta-cell h3 { font-family:'Bebas Neue',sans-serif; font-size:1.5rem; color:var(--gold-light); letter-spacing:0.02em; line-height:1; }
+    .ag-cta-cell p { font-size:0.8125rem; color:var(--navy-pale); line-height:1.5; max-width:210px; }
+    @media (max-width:760px) {
+      .action-gallery { grid-template-columns:1fr; }
+      .ag-left { min-height:260px; }
+      .ag-right { grid-template-rows:200px 200px auto; }
+      .ag-right--grid2x2 { grid-template-columns:1fr 1fr; grid-template-rows:160px 160px; }
+    }
+
+    /* ── AUDIO RIBBON ─────────────────────────────────── */
+    .audio-ribbon {
+      background: linear-gradient(90deg, var(--navy-deep) 0%, var(--navy-blast) 100%);
+      border-bottom: 2px solid var(--gold);
+      display: flex; align-items: center; gap: 16px; padding: 10px 40px;
+    }
+    .audio-ribbon.hidden { display: none; }
+    .audio-play-btn {
+      width: 38px; height: 38px; border-radius: 50%; background: var(--gold);
+      border: none; cursor: pointer; display: flex; align-items: center; justify-content: center;
+      flex-shrink: 0; transition: background 0.2s, transform 0.1s;
+    }
+    .audio-play-btn:hover { background: var(--gold-light); transform: scale(1.07); }
+    .audio-icon { color: var(--navy-deep); font-size: 0.875rem; line-height: 1; pointer-events: none; margin-left: 2px; }
+    .audio-info { display: flex; flex-direction: column; gap: 1px; flex-shrink: 0; }
+    .audio-title { font-family: 'Bebas Neue', sans-serif; font-size: 1.0625rem; color: var(--white); letter-spacing: 0.06em; line-height: 1; }
+    .audio-sub { font-family: 'Barlow Condensed', sans-serif; font-size: 0.6875rem; color: var(--silver); letter-spacing: 0.1em; text-transform: uppercase; }
+    .audio-progress-wrap { flex: 1; background: rgba(255,255,255,0.15); border-radius: 3px; height: 4px; cursor: pointer; min-width: 60px; }
+    .audio-progress-bar { height: 100%; background: var(--gold); border-radius: 3px; width: 0%; transition: width 0.3s linear; pointer-events: none; }
+    .audio-time { font-family: 'Barlow Condensed', sans-serif; font-size: 0.75rem; color: var(--silver-mid); flex-shrink: 0; letter-spacing: 0.05em; min-width: 32px; text-align: right; }
+    .audio-close-btn { background: none; border: none; color: var(--silver-mid); font-size: 0.875rem; cursor: pointer; padding: 4px 8px; transition: color 0.2s; flex-shrink: 0; }
+    .audio-close-btn:hover { color: var(--white); }
+    @media (max-width: 600px) { .audio-ribbon { padding: 10px 16px; gap: 10px; } .audio-sub, .audio-time { display: none; } }
+
+    /* ── GRAD OUTCOMES ──────────────────────────────────── */
+    .grad-era-btn {
+      font-family: 'Barlow Condensed', sans-serif; font-weight: 600; font-size: 0.8125rem;
+      letter-spacing: 0.08em; text-transform: uppercase; padding: 7px 18px;
+      border-radius: 4px; border: 1.5px solid var(--navy-pale); background: var(--white);
+      color: var(--navy-mid); cursor: pointer; transition: all 0.2s;
+    }
+    .grad-era-btn:hover { border-color: var(--gold); color: var(--gold); }
+    .grad-era-btn.active { background: var(--navy-deep); color: var(--white); border-color: var(--navy-deep); }
+    .grad-year-group { margin-bottom: 28px; }
+    .grad-year-label {
+      font-family: 'Bebas Neue', sans-serif; font-size: 1.25rem; color: var(--navy-blast);
+      letter-spacing: 0.04em; padding: 8px 0; border-bottom: 2px solid var(--gold);
+      margin-bottom: 12px; display: flex; align-items: baseline; gap: 12px;
+    }
+    .grad-year-count {
+      font-family: 'Barlow Condensed', sans-serif; font-weight: 600; font-size: 0.75rem;
+      letter-spacing: 0.1em; text-transform: uppercase; color: var(--gray-warm);
+    }
+    .grad-row {
+      display: grid; grid-template-columns: 190px 58px 1fr; gap: 12px; align-items: baseline;
+      padding: 10px 0; border-bottom: 1px solid var(--navy-pale);
+    }
+    .grad-row:last-child { border-bottom: none; }
+    .grad-name { font-weight: 600; color: var(--navy-deep); font-size: 0.9375rem; }
+    .grad-pos {
+      font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: 0.6875rem;
+      letter-spacing: 0.08em; text-transform: uppercase; color: var(--white);
+      background: var(--navy-mid); padding: 3px 6px; border-radius: 3px; white-space: nowrap;
+    }
+    .grad-deg { color: var(--gray-warm); font-size: 0.875rem; line-height: 1.4; }
+    .grad-dual-badge {
+      display: inline-flex; align-items: center; background: var(--gold-pale);
+      border: 1px solid var(--gold); color: var(--gold); font-family: 'Barlow Condensed', sans-serif;
+      font-size: 0.6875rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase;
+      padding: 2px 6px; border-radius: 3px; margin-left: 6px; vertical-align: middle;
+    }
+    .deg-bar-row {
+      display: grid; grid-template-columns: 210px 1fr 34px; gap: 12px; align-items: center; margin-bottom: 10px;
+    }
+    .deg-bar-label { font-size: 0.8125rem; color: var(--navy-mid); font-weight: 500; text-align: right; }
+    .deg-bar-track { background: var(--navy-pale); border-radius: 3px; height: 10px; overflow: hidden; }
+    .deg-bar-fill { height: 100%; background: var(--navy-blast); border-radius: 3px; }
+    .deg-bar-count { font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: 0.875rem; color: var(--navy-blast); }
+    @media (max-width: 640px) {
+      .deg-bar-row { grid-template-columns: 110px 1fr 24px; gap: 8px; }
+      .deg-bar-label { font-size: 0.75rem; }
+      .grad-row { grid-template-columns: 1fr 55px; grid-template-rows: auto auto; }
+      .grad-row .grad-name { grid-column: 1; }
+      .grad-row .grad-pos-cell { grid-column: 2; text-align: right; }
+      .grad-row .grad-deg { grid-column: 1 / -1; font-size: 0.8125rem; }
+    }
+
+    /* Accordion roster */
+    .grad-acc-item { border: 1px solid var(--navy-pale); border-radius: 6px; margin-bottom: 6px; overflow: hidden; }
+    .grad-acc-btn {
+      width: 100%; display: flex; align-items: center; gap: 12px;
+      padding: 13px 20px; background: var(--white); border: none; cursor: pointer;
+      font-family: inherit; transition: background 0.15s;
+    }
+    .grad-acc-btn:hover { background: var(--gold-pale); }
+    .grad-acc-btn.open { background: var(--navy-deep); }
+    .grad-acc-year { font-family: 'Bebas Neue', sans-serif; font-size: 1.125rem; color: var(--navy-blast); letter-spacing: 0.04em; line-height: 1; }
+    .grad-acc-btn.open .grad-acc-year { color: var(--gold-light); }
+    .grad-acc-count { font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: 0.6875rem; letter-spacing: 0.1em; text-transform: uppercase; background: var(--navy-pale); color: var(--navy-mid); padding: 3px 10px; border-radius: 10px; }
+    .grad-acc-btn.open .grad-acc-count { background: var(--gold); color: var(--navy-deep); }
+    .grad-acc-chevron { font-size: 0.6875rem; color: var(--silver-mid); transition: transform 0.25s; margin-left: auto; }
+    .grad-acc-btn.open .grad-acc-chevron { transform: rotate(180deg); color: var(--gold-light); }
+    .grad-acc-body { display: none; padding: 4px 20px 14px; background: var(--off-white); border-top: 1px solid var(--navy-pale); }
+    .grad-acc-body.open { display: block; }
+
+    /* ── REDUCED MOTION ─────────────────────────────────── */
+    @media (prefers-reduced-motion: reduce) { *, *::before, *::after { transition: none !important; animation: none !important; } }
+  </style>
+  <script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="wordmark">MINES <em>SOFTBALL</em></div>
+    <nav class="header-links" aria-label="Site navigation">
+      <a href="https://minesathletics.com/sports/softball" target="_blank" rel="noopener">Official Site</a>
+      <a href="https://minesathletics.com/sports/softball/schedule" target="_blank" rel="noopener">Schedule</a>
+      <a href="https://minesathletics.com/sb_output.aspx?form=8" target="_blank" rel="noopener" class="cta-link">Get Recruited</a>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" aria-label="Mines Softball hero">
+    <div class="hero-bg" role="img" aria-label="Colorado School of Mines Softball team photo at Joe Coors Jr. Softball Field with the Daktronics scoreboard and Rocky Mountain canyon backdrop"></div>
+    <div class="hero-overlay" aria-hidden="true"></div>
+    <div class="hero-content">
+      <p class="hero-eyebrow">Colorado School of Mines &nbsp;·&nbsp; Golden, CO &nbsp;·&nbsp; NCAA Division II &nbsp;·&nbsp; RMAC</p>
+      <h1 class="hero-title">Play Ball.<br>Engineer<br>the Future.</h1>
+      <p class="hero-sub">Where elite student-athletes become world-class engineers.</p>
+      <div class="hero-ctas">
+        <a href="https://minesathletics.com/sb_output.aspx?form=8" target="_blank" rel="noopener" class="btn-gold">Start the Questionnaire →</a>
+        <a href="https://minesathletics.com/sports/softball/schedule" target="_blank" rel="noopener" class="btn-ghost">See the 2026 Schedule →</a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Audio Ribbon ─────────────────────────────────────── -->
+  <div class="audio-ribbon" id="audio-ribbon">
+    <button class="audio-play-btn" id="audio-play-btn" aria-label="Play Chasing Dreams">
+      <span class="audio-icon" id="audio-icon">&#9654;</span>
+    </button>
+    <div class="audio-info">
+      <span class="audio-title">Chasing Dreams</span>
+      <span class="audio-sub">Mines Softball &nbsp;&middot;&nbsp; Original Song</span>
+    </div>
+    <div class="audio-progress-wrap" id="audio-progress-wrap">
+      <div class="audio-progress-bar" id="audio-progress-bar"></div>
+    </div>
+    <span class="audio-time" id="audio-time">0:00</span>
+    <button class="audio-close-btn" id="audio-close-btn" aria-label="Dismiss player">&#10005;</button>
+    <audio id="chasing-dreams-audio" src="uploads/Chasing%20Dreams%20(1).mp3" preload="none"></audio>
+  </div>
+
+  <!-- TAB NAV -->
+  <nav class="tab-nav" id="tab-nav" role="tablist" aria-label="Page sections">
+    <div class="tab-scroll">
+      <button class="tab-btn active" role="tab" aria-selected="true"  aria-controls="panel-program"   id="tab-program"   data-tab="program">⚾&nbsp; The Program</button>
+      <button class="tab-btn"        role="tab" aria-selected="false" aria-controls="panel-excellence" id="tab-excellence" data-tab="excellence">🏆&nbsp; Athletic Excellence</button>
+      <button class="tab-btn"        role="tab" aria-selected="false" aria-controls="panel-academics"  id="tab-academics"  data-tab="academics">🎓&nbsp; Academics</button>
+      <button class="tab-btn"        role="tab" aria-selected="false" aria-controls="panel-careers"    id="tab-careers"    data-tab="careers">💼&nbsp; Career Outcomes</button>
+      <button class="tab-btn"        role="tab" aria-selected="false" aria-controls="panel-campus"     id="tab-campus"     data-tab="campus">🏔&nbsp; Campus Life</button>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- ═══════════════════════════════════════════════════
+         TAB 1 — THE PROGRAM
+    ═══════════════════════════════════════════════════ -->
+    <div class="tab-panel active" id="panel-program" role="tabpanel" aria-labelledby="tab-program" data-screen-label="01 The Program">
+
+      <!-- Action Photo Gallery -->
+      <div class="action-gallery" aria-label="Mines Softball photo gallery">
+        <div class="ag-left">
+          <img src="uploads/Homerun.png" alt="Orediggers swarm home plate to celebrate a home run — 2026 RMAC postseason" style="object-position:center 30%;">
+          <div class="ag-caption">
+            <h3>Oredigger Energy</h3>
+            <p>Home run celebration &nbsp;·&nbsp; 2026 RMAC Postseason</p>
+          </div>
+        </div>
+        <div class="ag-right ag-right--grid2x2">
+          <div class="ag-cell">
+            <img src="uploads/All RMAC Selections.png" alt="Kendall Aragon and Naomi Ton headline All-RMAC Selections 2026" style="object-position:center 15%;">
+            <div class="ag-caption">
+              <h3>All-RMAC Selections</h3>
+              <p>Aragon &amp; Ton &nbsp;·&nbsp; 2026</p>
+            </div>
+          </div>
+          <div class="ag-cell">
+            <img src="uploads/Senior Day 26.png" alt="Senior Day 2026 — five Orediggers honored at Joe Coors Jr. Softball Field" style="object-position:center 20%;">
+            <div class="ag-caption">
+              <h3>Senior Day 2026</h3>
+              <p>Five Orediggers honored at Joe Coors</p>
+            </div>
+          </div>
+          <div class="ag-cell">
+            <img src="uploads/Post Season.png" alt="Oredigger batter at the plate — 2026 RMAC postseason" style="object-position:center 25%;">
+            <div class="ag-caption">
+              <h3>Postseason Orediggers</h3>
+              <p>Punching the RMAC Tournament Ticket &nbsp;·&nbsp; 2026</p>
+            </div>
+          </div>
+          <div class="ag-cell">
+            <img src="uploads/Scholar Athletes.png" alt="15 Orediggers earn NFCA All-America Scholar-Athlete honors 2026" style="object-position:center top;">
+            <div class="ag-caption">
+              <h3>NFCA Scholar-Athletes</h3>
+              <p>15 All-America Academic Honors &nbsp;·&nbsp; 2026</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Coach Echo-Hawk -->
+      <div class="sec sec--navy">
+        <div class="inner">
+          <p class="eyebrow">Head Coach</p>
+          <div class="coach-wrap">
+            <div>
+              <img src="uploads/Coach Echohawk.jpg" alt="Head Coach Tobin Echo-Hawk standing on the Joe Coors Jr. Softball Field in a navy polo with arms crossed and a smile, MINES SOFTBALL banner behind her" class="coach-photo">
+            </div>
+            <div>
+              <h2 class="coach-name">Tobin Echo-Hawk</h2>
+              <p class="coach-title-tag">Head Coach · Colorado School of Mines Softball</p>
+              <div class="coach-bio" id="coach-bio-full">
+                <p>A two-time All-American at the University of Nebraska, Tobin Echo-Hawk was part of the Huskers' national rise in the mid-1990s — batting .379 for her career (2nd all-time at Nebraska), compiling 266 career hits (1st all-time), and scoring a then-school-record 61 runs in 1996. She knows what it means to compete at the highest level, because she did it.</p>
+                <p>Named Mines' 13th head coach in December 2024, Echo-Hawk brings 13 collegiate seasons and 300 wins to Golden — including four NCAA tournament appearances and four Conference Coach of the Year awards at Portland State, and a school-record 13 conference wins in a single season at UTEP. She is a native of Louisville, Colorado, and she is home.</p>
+                <p>In 2026, her Orediggers led NCAA Division II in triples (40) and set a program record with 122 stolen bases — the first 100-steal season in Mines history. Kendall Aragon finished as the nation's leader in triples and earned First Team All-RMAC and Gold Glove honors. This is Echo-Hawk's brand: fast, smart, and relentless.</p>
+              </div>
+              <div class="coach-bio" id="coach-bio-short" style="display:none;">
+                <p>A two-time All-American at Nebraska and veteran D1 head coach, Tobin Echo-Hawk brings 300 collegiate wins and a championship pedigree to Golden. Named Mines' 13th head coach in December 2024, she's building a program that plays fast, earns degrees, and competes for titles. In 2026, her Orediggers set program records in stolen bases (122) and triples (40) while leading the nation in both categories.</p>
+              </div>
+              <div class="coach-btns">
+                <a href="https://minesathletics.com/sports/softball/roster/coaches/tobin-echo-hawk/1118" target="_blank" rel="noopener" class="btn-gold">Meet Coach Echo-Hawk →</a>
+                <a href="https://minesathletics.com/sb_output.aspx?form=8" target="_blank" rel="noopener" class="btn-ghost">Start Questionnaire →</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Joe Coors Jr. Field -->
+      <div class="sec">
+        <div class="inner">
+          <p class="eyebrow">Home Field</p>
+          <h2 class="sec-title">Joe Coors Jr. Softball Field</h2>
+          <p class="sec-lede">At the base of Mount Zion, along the Clear Creek Athletics Complex. Views most players only see on postcards.</p>
+
+          <div class="facility">
+            <div class="facility-img-wrap">
+              <img src="uploads/Field.png" alt="Aerial view of Joe Coors Jr. Softball Field showing the freshly installed artificial turf with MINES SOFTBALL OREDIGGERS on the outfield wall and autumn foliage beyond">
+              <div class="facility-overlay" aria-hidden="true"></div>
+              <div class="facility-label">Joe Coors Jr. Softball Field</div>
+            </div>
+            <div class="facility-facts">
+              <div class="ffact">
+                <div class="ffact-lbl">Surface</div>
+                <div class="ffact-val">Brand-new artificial turf — installed Fall 2024, championed by Mines alumnae donors</div>
+              </div>
+              <div class="ffact">
+                <div class="ffact-lbl">Seating</div>
+                <div class="ffact-val">250 seats at the base of Mount Zion</div>
+              </div>
+              <div class="ffact">
+                <div class="ffact-lbl">The View</div>
+                <div class="ffact-val">Mt. Zion, Mt. Galbraith, and Clear Creek Canyon beyond the outfield fence</div>
+              </div>
+              <div class="ffact">
+                <div class="ffact-lbl">Renovated</div>
+                <div class="ffact-val">2018–19: new dugouts, press box, Daktronics scoreboard, backstop</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="two-col" style="margin-top:24px;">
+            <img src="uploads/Fields.png" alt="Wide aerial view of the full Clear Creek Athletics Complex showing the softball field alongside Mines baseball, track, and other athletic facilities with the Rocky Mountain foothills in the background" style="width:100%;border-radius:8px;aspect-ratio:16/9;object-fit:cover;">
+            <div style="background:var(--gold-pale);border-radius:8px;padding:32px;border-bottom:3px solid var(--gold);">
+              <p class="eyebrow">Named for a Legend</p>
+              <p style="font-family:'Bebas Neue',sans-serif;font-size:2rem;color:var(--navy-deep);letter-spacing:0.02em;margin-bottom:12px;line-height:1.05;">Joe Coors, Jr.</p>
+              <p style="color:var(--gray-warm);line-height:1.65;font-size:var(--fs-body);">Named in August 2020 through an anonymous donation. The turf project — completed Fall 2024 — was championed by alumnae Kerry Siggins '01, Kari Gonzales '02, and Kim Alanis '04 MS '05. This is what the Mines community does: they come back and build something better than they found.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Culture of Champions -->
+      <div class="sec sec--dark">
+        <div class="inner">
+          <p class="eyebrow">Mines Athletics</p>
+          <h2 class="sec-title">A Campus Built to Win</h2>
+          <p class="sec-lede">When you put on the Oredigger uniform, you join a culture of elite performance that spans every sport on campus. Winning is a habit at Mines — built over decades across 14 varsity sports.</p>
+
+          <div style="background:var(--navy-blast);border-radius:8px;padding:36px 40px;margin-bottom:40px;position:relative;overflow:hidden;">
+            <div style="position:absolute;right:28px;top:50%;transform:translateY(-50%);font-family:'Bebas Neue',sans-serif;font-size:9rem;color:rgba(255,255,255,0.04);line-height:1;pointer-events:none;user-select:none;">CHAMPS</div>
+            <p style="font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:0.75rem;letter-spacing:0.22em;text-transform:uppercase;color:var(--gold-light);margin-bottom:16px;">NCAA Division II National Championships &amp; Milestones</p>
+            <div style="display:flex;flex-wrap:wrap;gap:10px;">
+              <span class="champ-tag">Men's Cross Country &mdash; 2015</span>
+              <span class="champ-tag">Men's Cross Country &mdash; 2019</span>
+              <span class="champ-tag">Men's Cross Country &mdash; 2022</span>
+              <span class="champ-tag">Cycling &mdash; 6 Consecutive National Titles</span>
+              <span class="champ-tag">Football &mdash; National Runner-Up 2022</span>
+              <span class="champ-tag">Volleyball &mdash; 3 Consecutive RMAC Titles</span>
+            </div>
+          </div>
+
+          <div class="stat-grid" style="grid-template-columns:repeat(auto-fit,minmax(200px,1fr));margin-bottom:40px;">
+            <div class="stat-card">
+              <div class="stat-num">#1</div>
+              <div class="stat-lbl">NCAA DII for Student-Athletes</div>
+              <div class="stat-ctx">NCSA Power Rankings, 2025</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-num">Top 10</div>
+              <div class="stat-lbl">All DII Programs</div>
+              <div class="stat-ctx">LEARFIELD Directors' Cup</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-num">415+</div>
+              <div class="stat-lbl">All-Americans in History</div>
+              <div class="stat-ctx">1,073 total All-American awards</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-num">#1</div>
+              <div class="stat-lbl">Most Academic All-Americans</div>
+              <div class="stat-ctx">In NCAA Division II history</div>
+            </div>
+          </div>
+
+          <div class="achieve-grid">
+            <div class="achieve-card">
+              <div class="achieve-card-title">Volleyball Dominance</div>
+              <div class="achieve-card-body">Three consecutive RMAC Championships and six straight NCAA Tournament appearances. Oredigger volleyball is consistently ranked Top 25 nationally in Division II — the standard every Mines program aspires to reach.</div>
+            </div>
+            <div class="achieve-card">
+              <div class="achieve-card-title">Cross Country Dynasty</div>
+              <div class="achieve-card-body">Three national titles in eight years (2015, 2019, 2022). The 2022 championship was won by the largest margin of victory in meet history. Championship culture is embedded in the DNA of this place.</div>
+            </div>
+            <div class="achieve-card">
+              <div class="achieve-card-title">Football's National Run</div>
+              <div class="achieve-card-body">The Oredigger football program reached the 2022 NCAA DII National Championship game. When Mines competes for a title, the whole campus shows up — and that energy carries into every sport, every season.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- CTA -->
+      <div class="cta-band">
+        <p class="cta-band-title">Ready to Be an Oredigger?</p>
+        <p class="cta-band-body">Coach Echo-Hawk and her staff are building the next great chapter of Mines Softball. Tell us about you.</p>
+        <a href="https://minesathletics.com/sb_output.aspx?form=8" target="_blank" rel="noopener" class="btn-gold">Start the Questionnaire →</a>
+        <span class="cta-fine">Takes about 5 minutes.</span>
+      </div>
+    </div>
+
+    <!-- ═══════════════════════════════════════════════════
+         TAB 2 — ATHLETIC EXCELLENCE
+    ═══════════════════════════════════════════════════ -->
+    <div class="tab-panel" id="panel-excellence" role="tabpanel" aria-labelledby="tab-excellence" data-screen-label="02 Athletic Excellence">
+
+      <div class="sec sec--dark">
+        <div class="inner">
+          <p class="eyebrow">Rankings &amp; Recognition</p>
+          <h2 class="sec-title">One of the Top D-II Programs in the Country</h2>
+          <p class="sec-lede">Mines Athletics competes at the highest level of NCAA Division II — and regularly punches well above its weight in the national rankings.</p>
+          <div class="rank-strip" style="background:var(--navy-mid);">
+            <div class="rank-item">
+              <div class="rank-num">3</div>
+              <div class="rank-desc">All-RMAC Honors</div>
+              <div class="rank-src">Aragon (1st team + Gold Glove) · Ton · 2026</div>
+            </div>
+            <div class="rank-item">
+              <div class="rank-num">#1</div>
+              <div class="rank-desc">NCAA DII — Triples</div>
+              <div class="rank-src">40 triples · program record · 2026</div>
+            </div>
+            <div class="rank-item">
+              <div class="rank-num">122</div>
+              <div class="rank-desc">Stolen Bases</div>
+              <div class="rank-src">Program record · first 100-SB season</div>
+            </div>
+            <div class="rank-item">
+              <div class="rank-num">.333</div>
+              <div class="rank-desc">Team Batting Average</div>
+              <div class="rank-src">3rd in RMAC · 2026</div>
+            </div>
+          </div>
+          <div class="achieve-grid">
+            <div class="achieve-card">
+              <div class="achieve-card-title">Nation-Leading Speed</div>
+              <div class="achieve-card-body">122 stolen bases in 2026 — a program record and the first 100-steal season in Mines history. Five Orediggers recorded double-digit steals, also a program first. Mines also led NCAA DII with 40 triples. No one runs like the Orediggers.</div>
+            </div>
+            <div class="achieve-card">
+              <div class="achieve-card-title">Home Field Advantage</div>
+              <div class="achieve-card-body">16–8 in games at Joe Coors Jr. Softball Field in 2025. Brand-new artificial turf installed Fall 2024 through a donor effort led by Mines alumnae — one of the premier facilities in all of DII softball.</div>
+            </div>
+            <div class="achieve-card">
+              <div class="achieve-card-title">New Era</div>
+              <div class="achieve-card-body">Head Coach Tobin Echo-Hawk arrived December 2024. This is the ground floor of something built with intention — players who join now shape the program's identity for years to come.</div>
+            </div>
+            <div class="achieve-card">
+              <div class="achieve-card-title">Conference Roots</div>
+              <div class="achieve-card-body">The Rocky Mountain Athletic Conference is one of the most competitive D-II leagues in the country. Mines has competed — and won — at its highest level, with postseason appearances and All-Conference honorees every season.</div>
+            </div>
+            <div class="achieve-card">
+              <div class="achieve-card-title">Scholar-Athlete Culture</div>
+              <div class="achieve-card-body">Mines athletes carry a team GPA that would be the envy of most liberal arts schools. The Oredigger identity is inseparable from academic excellence — that's not an accident, it's a culture.</div>
+            </div>
+            <div class="achieve-card">
+              <div class="achieve-card-title">Full Athletic Support</div>
+              <div class="achieve-card-body">Softball is one of 14 NCAA sports at Mines. The athletic department is funded, supported, and deeply tied to the university's identity. Student-athletes are treated as the full community members they are.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Photo Strip: Team + Fields -->
+      <div class="photo-strip photo-strip--3" aria-label="Mines Softball field and team photos">
+        <img src="uploads/Team.png" alt="Mines Softball team portrait in uniform" style="object-position:center 20%;">
+        <img src="uploads/Field.png" alt="Aerial view of Joe Coors Jr. Softball Field" style="object-position:center;">
+        <img src="uploads/Fields.png" alt="The full Clear Creek Athletics Complex" style="object-position:center 30%;">
+      </div>
+
+      <!-- CTA -->
+      <div class="cta-band">
+        <p class="cta-band-title">Show Us What You've Got</p>
+        <p class="cta-band-body">Share your athletic profile and academic goals. Coach Echo-Hawk's staff will be in touch.</p>
+        <a href="https://minesathletics.com/sb_output.aspx?form=8" target="_blank" rel="noopener" class="btn-gold">Start the Questionnaire →</a>
+        <span class="cta-fine">Takes about 5 minutes.</span>
+      </div>
+    </div>
+
+    <!-- ═══════════════════════════════════════════════════
+         TAB 3 — ACADEMICS
+    ═══════════════════════════════════════════════════ -->
+    <div class="tab-panel" id="panel-academics" role="tabpanel" aria-labelledby="tab-academics" data-screen-label="03 Academics">
+
+      <div class="sec sec--dark">
+        <div class="inner">
+          <p class="eyebrow">Academic Excellence</p>
+          <h2 class="sec-title">A STEM Degree Worth Every Rep</h2>
+          <p class="sec-lede">Colorado School of Mines holds Carnegie R1 status — the nation's highest research designation — while competing in Division II athletics. It's the rarest combination in American higher education.</p>
+          <div class="stat-grid" style="grid-template-columns:repeat(auto-fit,minmax(175px,1fr));">
+            <div class="stat-card">
+              <div class="stat-num">R1</div>
+              <div class="stat-lbl">Carnegie Classification</div>
+              <div class="stat-ctx">Highest research activity designation</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-num">21</div>
+              <div class="stat-lbl">STEM Majors</div>
+              <div class="stat-ctx">All engineering &amp; science degrees</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-num">~3,100</div>
+              <div class="stat-lbl">Undergraduates</div>
+              <div class="stat-ctx">Small campus · big community</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-num">12:1</div>
+              <div class="stat-lbl">Faculty–Student Ratio</div>
+              <div class="stat-ctx">Professors know your name</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="sec">
+        <div class="inner">
+          <span class="r1-badge">R1 Research University</span>
+          <p class="eyebrow">21 Majors Across 6 Disciplines</p>
+          <h2 class="sec-title">Choose Your Field. Own It.</h2>
+          <p class="sec-lede">Every Mines major is specialized, rigorous, and connects directly to high-demand industries. Starting salaries shown are program medians for recent Mines graduates.</p>
+          <div class="major-grid">
+            <div class="major-card">
+              <div class="major-cat">Chemical &amp; Biological</div>
+              <ul class="major-list">
+                <li><span>Chemical Engineering</span><span class="major-salary">$78–92k</span></li>
+                <li><span>Biochemistry</span><span class="major-salary">$60–75k</span></li>
+                <li><span>Chemistry</span><span class="major-salary">$58–72k</span></li>
+              </ul>
+            </div>
+            <div class="major-card">
+              <div class="major-cat">Civil &amp; Environmental</div>
+              <ul class="major-list">
+                <li><span>Civil Engineering</span><span class="major-salary">$72–86k</span></li>
+                <li><span>Environmental Engineering</span><span class="major-salary">$68–82k</span></li>
+              </ul>
+            </div>
+            <div class="major-card">
+              <div class="major-cat">Computing &amp; Data</div>
+              <ul class="major-list">
+                <li><span>Computer Science</span><span class="major-salary">$88–110k</span></li>
+                <li><span>Computer Engineering</span><span class="major-salary">$85–105k</span></li>
+                <li><span>Data Science</span><span class="major-salary">$82–100k</span></li>
+                <li><span>Electrical Engineering</span><span class="major-salary">$82–98k</span></li>
+              </ul>
+            </div>
+            <div class="major-card">
+              <div class="major-cat">Earth, Energy &amp; Environment</div>
+              <ul class="major-list">
+                <li><span>Geological Engineering</span><span class="major-salary">$72–90k</span></li>
+                <li><span>Mining Engineering</span><span class="major-salary">$76–95k</span></li>
+                <li><span>Petroleum Engineering</span><span class="major-salary">$85–105k</span></li>
+                <li><span>Geophysics</span><span class="major-salary">$70–88k</span></li>
+                <li><span>Geology</span><span class="major-salary">$62–78k</span></li>
+              </ul>
+            </div>
+            <div class="major-card">
+              <div class="major-cat">Mechanical &amp; Materials</div>
+              <ul class="major-list">
+                <li><span>Mechanical Engineering</span><span class="major-salary">$80–98k</span></li>
+                <li><span>Metallurgical &amp; Materials Eng.</span><span class="major-salary">$76–92k</span></li>
+                <li><span>Engineering Physics</span><span class="major-salary">$72–88k</span></li>
+              </ul>
+            </div>
+            <div class="major-card">
+              <div class="major-cat">Economics &amp; Society</div>
+              <ul class="major-list">
+                <li><span>Economics</span><span class="major-salary">$62–80k</span></li>
+                <li><span>Eng. &amp; Technology Mgmt.</span><span class="major-salary">$74–90k</span></li>
+                <li><span>Humanitarian Engineering</span><span class="major-salary">$55–70k</span></li>
+                <li><span>Physics</span><span class="major-salary">$64–80k</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Grad Outcomes ────────────────────────────────── -->
+      <div class="sec sec--navy" id="sec-graduates">
+        <div class="inner">
+          <p class="eyebrow">10 Years of Proof</p>
+          <h2 class="sec-title">Orediggers Graduate.</h2>
+          <p class="sec-lede">Since 2016, every Mines Softball senior class has earned engineering and science degrees from one of the most demanding STEM universities in America — with five Orediggers earning dual B.S.&nbsp;+ M.S. degrees before leaving campus.</p>
+
+          <div class="stat-grid" style="grid-template-columns: repeat(4, minmax(130px, 1fr)); margin-bottom: 48px;">
+            <div class="stat-card stat-card--lt">
+              <div class="stat-num">40+</div>
+              <div class="stat-lbl">Graduates</div>
+              <div class="stat-ctx">10 seasons of data</div>
+            </div>
+            <div class="stat-card stat-card--lt">
+              <div class="stat-num">5</div>
+              <div class="stat-lbl">Dual Degrees</div>
+              <div class="stat-ctx">B.S. + M.S. in engineering</div>
+            </div>
+            <div class="stat-card stat-card--lt">
+              <div class="stat-num">10</div>
+              <div class="stat-lbl">Disciplines</div>
+              <div class="stat-ctx">Mech &middot; Civil &middot; Chem &middot; CS +</div>
+            </div>
+            <div class="stat-card stat-card--lt">
+              <div class="stat-num">~98%</div>
+              <div class="stat-lbl">STEM Degrees</div>
+              <div class="stat-ctx">Engineering &amp; applied science</div>
+            </div>
+          </div>
+
+          <div style="background: var(--white); border-radius: 8px; padding: 32px; box-shadow: 0 4px 16px rgba(11,26,51,0.07); border-bottom: 3px solid var(--gold); margin-bottom: 36px;">
+            <p style="font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: 0.75rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--gold); margin-bottom: 20px;">Where Orediggers Major</p>
+            <div id="grad-deg-chart"></div>
+          </div>
+
+          <p style="font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: 0.75rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--gold); margin-bottom: 12px;">Graduate Roster — click a year to expand</p>
+          <div id="grad-roster"></div>
+          <p style="font-size: 0.75rem; color: var(--silver-mid); margin-top: 12px; font-style: italic;">* Some players appear across multiple years due to extended eligibility windows.</p>
+        </div>
+      </div>
+
+
+      <div class="sec sec--off">
+        <div class="inner">
+          <p class="eyebrow">Student-Athlete Support</p>
+          <h2 class="sec-title">Mines Knows You're an Athlete. And an Engineer.</h2>
+          <p class="sec-lede">The Academic Achievement Center is your baseline. Tutoring, advising, and study resources are there — and your teammates will use them without hesitation.</p>
+          <div class="info-grid">
+            <div class="info-card">
+              <div class="info-card-title">Academic Achievement Center</div>
+              <div class="info-card-body">Free tutoring in every major subject. Drop-in hours 7 days a week. Student-athletes get priority scheduling during game and travel weeks.</div>
+            </div>
+            <div class="info-card">
+              <div class="info-card-title">12:1 Faculty Ratio</div>
+              <div class="info-card-body">Professors know your name — and they'll work with your travel schedule if you communicate early. You're never lost in a lecture hall of 500.</div>
+            </div>
+            <div class="info-card">
+              <div class="info-card-title">Research Opportunities</div>
+              <div class="info-card-body">R1 status means active research labs across every department — and undergraduates work in them. Publications, patents, and real industry impact can start sophomore year.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ═══════════════════════════════════════════════════
+         TAB 4 — CAREER OUTCOMES
+    ═══════════════════════════════════════════════════ -->
+    <div class="tab-panel" id="panel-careers" role="tabpanel" aria-labelledby="tab-careers" data-screen-label="04 Career Outcomes">
+
+      <div class="sec sec--dark">
+        <div class="inner">
+          <p class="eyebrow">After Mines · Class of 2025</p>
+          <h2 class="sec-title">The Degree That Pays For Itself.</h2>
+          <p class="sec-lede">Mines graduates are among the highest-paid in the nation relative to their investment. The 2024–25 Career Center Annual Report makes the case in plain numbers.</p>
+          <div class="outcome-grid">
+            <div class="outcome-card">
+              <div class="outcome-num">$84,000</div>
+              <div class="outcome-lbl">Avg. BS Starting Salary</div>
+              <div class="outcome-ctx">Class of 2025 · self-reported base salary</div>
+            </div>
+            <div class="outcome-card">
+              <div class="outcome-num">87%</div>
+              <div class="outcome-lbl">Positive Outcomes Rate</div>
+              <div class="outcome-ctx">Employed, enrolled, or military — NACE methodology</div>
+            </div>
+            <div class="outcome-card">
+              <div class="outcome-num">1,290</div>
+              <div class="outcome-lbl">Recruiting Organizations</div>
+              <div class="outcome-ctx">Recruited &amp; hired at Mines — 2024–25</div>
+            </div>
+            <div class="outcome-card">
+              <div class="outcome-num">94%</div>
+              <div class="outcome-lbl">Data Collection Rate</div>
+              <div class="outcome-ctx">Among the highest in the nation for NACE reporting</div>
+            </div>
+          </div>
+
+          <!-- Salary by degree level -->
+          <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:8px;">
+            <div style="background:var(--navy-mid);border-radius:8px;padding:28px 20px;text-align:center;border-top:3px solid var(--gold);">
+              <div style="font-family:'Bebas Neue',sans-serif;font-size:clamp(2rem,4vw,3rem);color:var(--gold-light);line-height:1;letter-spacing:0.02em;margin-bottom:6px;">$84K</div>
+              <div style="font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:0.8125rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--white);margin-bottom:4px;">Bachelor's Avg.</div>
+              <div style="font-size:0.75rem;color:var(--silver);font-style:italic;">87% positive outcomes · 1,372 grads</div>
+            </div>
+            <div style="background:var(--navy-mid);border-radius:8px;padding:28px 20px;text-align:center;border-top:3px solid var(--gold);">
+              <div style="font-family:'Bebas Neue',sans-serif;font-size:clamp(2rem,4vw,3rem);color:var(--gold-light);line-height:1;letter-spacing:0.02em;margin-bottom:6px;">$95K</div>
+              <div style="font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:0.8125rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--white);margin-bottom:4px;">Master's Avg.</div>
+              <div style="font-size:0.75rem;color:var(--silver);font-style:italic;">88% positive outcomes · 627 grads</div>
+            </div>
+            <div style="background:var(--navy-mid);border-radius:8px;padding:28px 20px;text-align:center;border-top:3px solid var(--gold);">
+              <div style="font-family:'Bebas Neue',sans-serif;font-size:clamp(2rem,4vw,3rem);color:var(--gold-light);line-height:1;letter-spacing:0.02em;margin-bottom:6px;">$100K</div>
+              <div style="font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:0.8125rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--white);margin-bottom:4px;">PhD Avg.</div>
+              <div style="font-size:0.75rem;color:var(--silver);font-style:italic;">88% positive outcomes · 120 grads</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="sec sec--navy">
+        <div class="inner">
+          <p class="eyebrow">National Rankings</p>
+          <h2 class="sec-title">Mines Ranks Where It Counts</h2>
+          <p class="sec-lede">Return on investment, salary outcomes, and academic value — Mines consistently ranks at the top of every metric that matters to families.</p>
+          <div class="rank-strip">
+            <div class="rank-item">
+              <div class="rank-num">#1</div>
+              <div class="rank-desc">Best Colleges for Engineering</div>
+              <div class="rank-src">Niche, 2026</div>
+            </div>
+            <div class="rank-item">
+              <div class="rank-num">#3</div>
+              <div class="rank-desc">Top ROI — Public Colleges</div>
+              <div class="rank-src">Wall Street Journal, 2025</div>
+            </div>
+            <div class="rank-item">
+              <div class="rank-num">Top 10</div>
+              <div class="rank-desc">Best Value in Engineering</div>
+              <div class="rank-src">US News &amp; World Report</div>
+            </div>
+            <div class="rank-item">
+              <div class="rank-num">#1</div>
+              <div class="rank-desc">Top STEM University in Colorado</div>
+              <div class="rank-src">Multiple sources, 2025–26</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="sec">
+        <div class="inner">
+          <p class="eyebrow">Where Orediggers Go</p>
+          <h2 class="sec-title">1,290 Recruiting Organizations. All Sizes. All Sectors.</h2>
+          <p class="sec-lede">Fall 2024 set a record as the largest Career Fair in Mines history — 5,300+ students, 721 employer registrations across two Career Days. As a student-athlete, your discipline and teamwork make you stand out from day one.</p>
+
+          <!-- Industry breakdown -->
+          <div style="background:var(--off-white);border-radius:8px;padding:32px;margin-bottom:32px;border-bottom:3px solid var(--gold);">
+            <p style="font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:0.75rem;letter-spacing:0.18em;text-transform:uppercase;color:var(--gold);margin-bottom:20px;">Jobs Accepted by Industry · BS + MS + PhD Combined · Class of 2025</p>
+            <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:10px 32px;">
+              <div style="display:flex;flex-direction:column;gap:8px;">
+                <div style="display:flex;justify-content:space-between;align-items:center;font-size:0.875rem;color:var(--navy-mid);padding:6px 0;border-bottom:1px solid var(--navy-pale);">
+                  <span>Aerospace · Defense · Aviation</span>
+                  <span style="font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:1rem;color:var(--navy-blast);min-width:36px;text-align:right;">19%</span>
+                </div>
+                <div style="display:flex;justify-content:space-between;align-items:center;font-size:0.875rem;color:var(--navy-mid);padding:6px 0;border-bottom:1px solid var(--navy-pale);">
+                  <span>Energy</span>
+                  <span style="font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:1rem;color:var(--navy-blast);min-width:36px;text-align:right;">12%</span>
+                </div>
+                <div style="display:flex;justify-content:space-between;align-items:center;font-size:0.875rem;color:var(--navy-mid);padding:6px 0;border-bottom:1px solid var(--navy-pale);">
+                  <span>Engineering &amp; Advisory Services</span>
+                  <span style="font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:1rem;color:var(--navy-blast);min-width:36px;text-align:right;">11%</span>
+                </div>
+                <div style="display:flex;justify-content:space-between;align-items:center;font-size:0.875rem;color:var(--navy-mid);padding:6px 0;border-bottom:1px solid var(--navy-pale);">
+                  <span>Civil &amp; Construction Engineering</span>
+                  <span style="font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:1rem;color:var(--navy-blast);min-width:36px;text-align:right;">11%</span>
+                </div>
+                <div style="display:flex;justify-content:space-between;align-items:center;font-size:0.875rem;color:var(--navy-mid);padding:6px 0;border-bottom:1px solid var(--navy-pale);">
+                  <span>High Tech · Information Technology</span>
+                  <span style="font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:1rem;color:var(--navy-blast);min-width:36px;text-align:right;">8%</span>
+                </div>
+              </div>
+              <div style="display:flex;flex-direction:column;gap:8px;">
+                <div style="display:flex;justify-content:space-between;align-items:center;font-size:0.875rem;color:var(--navy-mid);padding:6px 0;border-bottom:1px solid var(--navy-pale);">
+                  <span>Manufacturing · Machinery · Equipment</span>
+                  <span style="font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:1rem;color:var(--navy-blast);min-width:36px;text-align:right;">8%</span>
+                </div>
+                <div style="display:flex;justify-content:space-between;align-items:center;font-size:0.875rem;color:var(--navy-mid);padding:6px 0;border-bottom:1px solid var(--navy-pale);">
+                  <span>Government · Public Sector</span>
+                  <span style="font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:1rem;color:var(--navy-blast);min-width:36px;text-align:right;">7%</span>
+                </div>
+                <div style="display:flex;justify-content:space-between;align-items:center;font-size:0.875rem;color:var(--navy-mid);padding:6px 0;border-bottom:1px solid var(--navy-pale);">
+                  <span>Mining</span>
+                  <span style="font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:1rem;color:var(--navy-blast);min-width:36px;text-align:right;">4%</span>
+                </div>
+                <div style="display:flex;justify-content:space-between;align-items:center;font-size:0.875rem;color:var(--navy-mid);padding:6px 0;border-bottom:1px solid var(--navy-pale);">
+                  <span>Environmental Resources · Water</span>
+                  <span style="font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:1rem;color:var(--navy-blast);min-width:36px;text-align:right;">3%</span>
+                </div>
+                <div style="display:flex;justify-content:space-between;align-items:center;font-size:0.875rem;color:var(--navy-mid);padding:6px 0;border-bottom:1px solid var(--navy-pale);">
+                  <span>Other sectors</span>
+                  <span style="font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:1rem;color:var(--navy-blast);min-width:36px;text-align:right;">17%</span>
+                </div>
+              </div>
+            </div>
+            <p style="font-size:0.75rem;color:var(--gray-warm);margin-top:16px;font-style:italic;">Source: Mines Career &amp; Professional Development Annual Report 2024–25. Combined weighting of BS, MS, and PhD outcomes.</p>
+          </div>
+
+          <!-- Employer tags -->
+          <p style="font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:0.75rem;letter-spacing:0.18em;text-transform:uppercase;color:var(--gold);margin-bottom:14px;">Outstanding Employer Partners · 2024–25</p>
+          <div class="employer-grid">
+            <div class="employer-tag">AECOM</div>
+            <div class="employer-tag">Amazon</div>
+            <div class="employer-tag">AMD</div>
+            <div class="employer-tag">BAE Systems</div>
+            <div class="employer-tag">Baker Hughes</div>
+            <div class="employer-tag">Bechtel</div>
+            <div class="employer-tag">Blue Origin</div>
+            <div class="employer-tag">Boeing</div>
+            <div class="employer-tag">BP</div>
+            <div class="employer-tag">Burns &amp; McDonnell</div>
+            <div class="employer-tag">Chevron</div>
+            <div class="employer-tag">ConocoPhillips</div>
+            <div class="employer-tag">CoorsTek</div>
+            <div class="employer-tag">ExxonMobil</div>
+            <div class="employer-tag">Freeport-McMoRan</div>
+            <div class="employer-tag">Google</div>
+            <div class="employer-tag">Halliburton</div>
+            <div class="employer-tag">Honeybee Robotics</div>
+            <div class="employer-tag">Intel</div>
+            <div class="employer-tag">Kiewit</div>
+            <div class="employer-tag">Lockheed Martin</div>
+            <div class="employer-tag">Northrop Grumman</div>
+            <div class="employer-tag">SpaceX</div>
+            <div class="employer-tag">Texas Instruments</div>
+            <div class="employer-tag">United Launch Alliance</div>
+            <div class="employer-tag">Xcel Energy</div>
+          </div>
+
+          <div class="testimonial">
+            <p class="testimonial-quote">"Playing at Mines gave me a competitive edge I didn't expect. The combination of engineering coursework, athletics, and the Mines network opened doors I didn't even know existed. I had three offers before graduation — that's not luck, that's the Mines career fair."</p>
+            <p class="testimonial-attr">— Mines Softball Alumna &nbsp;·&nbsp; Civil Engineering '23 &nbsp;·&nbsp; Now: Structural Engineer, Denver</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="sec sec--off">
+        <div class="inner">
+          <p class="eyebrow">For Parents &amp; Families</p>
+          <h2 class="sec-title">What a Mines Degree Actually Returns</h2>
+          <p class="sec-lede">The right answer to "can we afford this?" involves time-to-employment, starting salary, and the Mines alumni network. The 2024–25 data makes the case clearly.</p>
+          <div class="info-grid">
+            <div class="info-card">
+              <p class="eyebrow" style="margin-bottom:4px;">In-State Tuition</p>
+              <p style="font-family:'Bebas Neue',sans-serif;font-size:2.5rem;color:var(--navy-blast);letter-spacing:0.02em;line-height:1;margin-bottom:8px;">~$18,300/yr</p>
+              <div class="info-card-body">Colorado residents. Scholarships, merit aid, and athletic financial support available — ask the coaching staff directly.</div>
+            </div>
+            <div class="info-card">
+              <p class="eyebrow" style="margin-bottom:4px;">Avg. BS Starting Salary</p>
+              <p style="font-family:'Bebas Neue',sans-serif;font-size:2.5rem;color:var(--navy-blast);letter-spacing:0.02em;line-height:1;margin-bottom:8px;">$84,000</p>
+              <div class="info-card-body">Class of 2025 average base salary for bachelor's graduates entering industry. 64% accepted jobs in Colorado.</div>
+            </div>
+            <div class="info-card">
+              <p class="eyebrow" style="margin-bottom:4px;">Internship Experience</p>
+              <p style="font-family:'Bebas Neue',sans-serif;font-size:2.5rem;color:var(--navy-blast);letter-spacing:0.02em;line-height:1;margin-bottom:8px;">75%</p>
+              <div class="info-card-body">Of BS graduates leave with documented technical work experience. Average internship pay: <strong>$26/hr</strong> (range: $15–$52/hr).</div>
+            </div>
+            <div class="info-card">
+              <p class="eyebrow" style="margin-bottom:4px;">Athletic Scholarships</p>
+              <p style="font-family:'Bebas Neue',sans-serif;font-size:2.5rem;color:var(--navy-blast);letter-spacing:0.02em;line-height:1;margin-bottom:8px;">Available</p>
+              <div class="info-card-body">Mines Softball offers athletic scholarships for qualifying student-athletes. Start the questionnaire to open that conversation.</div>
+            </div>
+          </div>
+
+          <!-- Selected salary highlights by major -->
+          <div style="margin-top:40px;">
+            <p style="font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:0.75rem;letter-spacing:0.18em;text-transform:uppercase;color:var(--gold);margin-bottom:16px;">Average Starting Salary by Major · BS Class of 2025</p>
+            <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:10px;">
+              <div style="display:flex;flex-direction:column;gap:0;">
+                <div style="display:flex;justify-content:space-between;padding:9px 12px;background:var(--white);border-radius:6px 6px 0 0;border:1px solid var(--navy-pale);border-bottom:none;font-size:0.875rem;color:var(--navy-mid);">
+                  <span>Engineering Physics</span><span style="font-family:'Barlow Condensed',sans-serif;font-weight:700;color:var(--navy-blast);">$97,800</span>
+                </div>
+                <div style="display:flex;justify-content:space-between;padding:9px 12px;background:var(--white);border:1px solid var(--navy-pale);border-bottom:none;font-size:0.875rem;color:var(--navy-mid);">
+                  <span>Computer Science</span><span style="font-family:'Barlow Condensed',sans-serif;font-weight:700;color:var(--navy-blast);">$89,900</span>
+                </div>
+                <div style="display:flex;justify-content:space-between;padding:9px 12px;background:var(--white);border:1px solid var(--navy-pale);border-bottom:none;font-size:0.875rem;color:var(--navy-mid);">
+                  <span>Applied Math &amp; Statistics</span><span style="font-family:'Barlow Condensed',sans-serif;font-weight:700;color:var(--navy-blast);">$87,700</span>
+                </div>
+                <div style="display:flex;justify-content:space-between;padding:9px 12px;background:var(--white);border:1px solid var(--navy-pale);border-bottom:none;font-size:0.875rem;color:var(--navy-mid);">
+                  <span>Electrical Engineering</span><span style="font-family:'Barlow Condensed',sans-serif;font-weight:700;color:var(--navy-blast);">$87,500</span>
+                </div>
+                <div style="display:flex;justify-content:space-between;padding:9px 12px;background:var(--white);border-radius:0 0 6px 6px;border:1px solid var(--navy-pale);font-size:0.875rem;color:var(--navy-mid);">
+                  <span>Chemical Engineering</span><span style="font-family:'Barlow Condensed',sans-serif;font-weight:700;color:var(--navy-blast);">$86,600</span>
+                </div>
+              </div>
+              <div style="display:flex;flex-direction:column;gap:0;">
+                <div style="display:flex;justify-content:space-between;padding:9px 12px;background:var(--white);border-radius:6px 6px 0 0;border:1px solid var(--navy-pale);border-bottom:none;font-size:0.875rem;color:var(--navy-mid);">
+                  <span>Metallurgical &amp; Materials Eng.</span><span style="font-family:'Barlow Condensed',sans-serif;font-weight:700;color:var(--navy-blast);">$86,500</span>
+                </div>
+                <div style="display:flex;justify-content:space-between;padding:9px 12px;background:var(--white);border:1px solid var(--navy-pale);border-bottom:none;font-size:0.875rem;color:var(--navy-mid);">
+                  <span>Mining Engineering</span><span style="font-family:'Barlow Condensed',sans-serif;font-weight:700;color:var(--navy-blast);">$85,500</span>
+                </div>
+                <div style="display:flex;justify-content:space-between;padding:9px 12px;background:var(--white);border:1px solid var(--navy-pale);border-bottom:none;font-size:0.875rem;color:var(--navy-mid);">
+                  <span>Mechanical Engineering</span><span style="font-family:'Barlow Condensed',sans-serif;font-weight:700;color:var(--navy-blast);">$81,700</span>
+                </div>
+                <div style="display:flex;justify-content:space-between;padding:9px 12px;background:var(--white);border:1px solid var(--navy-pale);border-bottom:none;font-size:0.875rem;color:var(--navy-mid);">
+                  <span>Civil Engineering</span><span style="font-family:'Barlow Condensed',sans-serif;font-weight:700;color:var(--navy-blast);">$81,700</span>
+                </div>
+                <div style="display:flex;justify-content:space-between;padding:9px 12px;background:var(--white);border-radius:0 0 6px 6px;border:1px solid var(--navy-pale);font-size:0.875rem;color:var(--navy-mid);">
+                  <span>Environmental Engineering</span><span style="font-family:'Barlow Condensed',sans-serif;font-weight:700;color:var(--navy-blast);">$75,100</span>
+                </div>
+              </div>
+            </div>
+            <p style="font-size:0.75rem;color:var(--gray-warm);margin-top:10px;font-style:italic;">Source: Mines Career &amp; Professional Development Annual Report 2024–25. Self-reported base salaries, industry employment only.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ═══════════════════════════════════════════════════
+         TAB 5 — CAMPUS LIFE
+    ═══════════════════════════════════════════════════ -->
+    <div class="tab-panel" id="panel-campus" role="tabpanel" aria-labelledby="tab-campus" data-screen-label="05 Campus Life">
+
+      <div class="sec sec--dark">
+        <div class="inner">
+          <p class="eyebrow">Golden, Colorado &nbsp;·&nbsp; 5,675 ft Elevation</p>
+          <h2 class="sec-title">12 Miles West of Denver. A Different Gravity.</h2>
+          <p class="sec-lede">Golden isn't a suburb — it's a mountain town with Clear Creek whitewater, Coors Brewery, and a main street that goes quiet enough to think. Close to everything. Actually a place.</p>
+        </div>
+      </div>
+
+      <!-- Golden Panels -->
+      <div class="sec sec--dark" style="padding-top:0;">
+        <div class="inner">
+          <div class="golden-panels">
+            <div class="golden-panel">
+              <div class="golden-panel-imgwrap">
+                <img src="uploads/GoldenCO_WashingtonStreet.jpg" alt="Washington Avenue in downtown Golden, Colorado — the tree-lined main street with mountain backdrop and foothills rising above the town">
+              </div>
+              <div class="golden-panel-body">
+                <h3 class="golden-panel-title">Washington Avenue</h3>
+                <p class="golden-panel-desc">Golden's main street. Independent restaurants, coffee shops, and gear stores — 10 minutes from the athletic complex. A real mountain town, not a college strip.</p>
+              </div>
+            </div>
+            <div class="golden-panel">
+              <div class="golden-panel-imgwrap">
+                <img src="uploads/clear-creek-golden-co-coors-brewery.jpg" alt="Clear Creek flowing through downtown Golden, Colorado with the Coors Brewery red sign visible and green tree-covered hillside rising behind it">
+              </div>
+              <div class="golden-panel-body">
+                <h3 class="golden-panel-title">Clear Creek Canyon</h3>
+                <p class="golden-panel-desc">The same creek that runs past your right-field fence runs through downtown. Kayaking, hiking, climbing — or just the view from the bridge after a win.</p>
+              </div>
+            </div>
+            <div class="golden-panel">
+              <div class="golden-panel-imgwrap">
+                <img src="uploads/M Climb.png" alt="Drone aerial photo showing hundreds of Colorado School of Mines students sitting on and filling the white letter M on the Mount Zion hillside above Golden during the M Climb tradition">
+              </div>
+              <div class="golden-panel-body">
+                <h3 class="golden-panel-title">Mount Zion &amp; The M</h3>
+                <p class="golden-panel-desc">The white letter M on the hillside above campus is Golden's landmark — and the beginning of one of Mines' most beloved traditions.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Traditions -->
+      <div class="sec">
+        <div class="inner">
+          <p class="eyebrow">Traditions</p>
+          <h2 class="sec-title">Things You'll Only Find at Mines</h2>
+          <p class="sec-lede">Mines has been building traditions since 1874. Some are engineering spectacles. Some are physical challenges. All of them will matter to you by the time you graduate.</p>
+          <div class="tradition-grid">
+            <div class="tradition-card">
+              <img src="uploads/M Climb Softball.jpg" alt="Mines Softball players and coaches posing together in hard hats holding rocks after completing the M Climb tradition, with dramatic mountain sunset sky behind them" style="object-position:top center;">
+              <div class="tradition-card-body">
+                <h3 class="tradition-card-title">M Climb</h3>
+                <p class="tradition-card-desc">Every incoming student climbs the M on Mount Zion at the start of their first year — and paints it. The Mines Softball team makes the climb together, in hard hats, carrying rocks. It's a small thing that means everything. By senior year, you'll have painted that M four times.</p>
+              </div>
+            </div>
+            <div class="tradition-card">
+              <img src="uploads/E days 1.jpg" alt="Mines students racing a cardboard boat on Clear Creek during the E-Days Engineering Days festival, cheered on by a large crowd along the banks — students wearing helmets and celebrating in the rapids" style="object-position:center 40%;">
+              <div class="tradition-card-body">
+                <h3 class="tradition-card-title">E-Days</h3>
+                <p class="tradition-card-desc">Engineering Days. A spring weekend where Mines students compete in engineering challenges — including the legendary Cardboard Boat Race down Clear Creek — and celebrate what it means to think like an engineer. It's part competition, part festival, 100% Mines.</p>
+              </div>
+            </div>
+            <div class="tradition-card">
+              <div style="background:var(--navy-blast);aspect-ratio:16/9;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:6px;padding:24px;">
+                <p style="font-family:'Bebas Neue',sans-serif;font-size:3.5rem;color:var(--gold-light);letter-spacing:0.02em;line-height:1;">500+</p>
+                <p style="font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:1rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--white);text-align:center;">Employers · One Campus · Twice a Year</p>
+              </div>
+              <div class="tradition-card-body">
+                <h3 class="tradition-card-title">Career Fair</h3>
+                <p class="tradition-card-desc">Twice a year, 500+ companies — from Fortune 500s to national labs to startups — come to Golden. Per student, it's the largest STEM career fair in the country. Orediggers walk out with internships and full-time offers. As an athlete, your discipline makes you stand out.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- M Climb Photo Moment — full-width photo strip -->
+      <div class="sec sec--pale" style="padding-bottom:0;">
+        <div class="inner" style="padding-bottom:48px;">
+          <p class="eyebrow">The Whole Team Makes The Climb</p>
+          <h2 class="sec-title">One of 3,100. Part of Something Bigger.</h2>
+          <p class="sec-lede">The M Climb isn't just a hike. It's your first day as a Mines student, carrying a rock up a mountain with 1,200 of your classmates. Every Mines athlete does it. They remember it forever.</p>
+        </div>
+      </div>
+      <div class="photo-strip photo-strip--3" aria-label="M Climb tradition photos — students on Mount Zion">
+        <img src="uploads/m-climb 2.jpg" alt="Excited Mines students wearing freshly painted hard hats, carrying rocks and cheering as they complete the M Climb up Mount Zion — a large joyful group in sunglasses and smiles" style="object-position:top center;">
+        <img src="uploads/M Climb.png" alt="Aerial drone view of hundreds of students sitting on the white M letters cut into the Mount Zion hillside above Golden, Colorado during the M Climb tradition" style="object-position:center;">
+        <img src="uploads/M Climb Softball.jpg" alt="Mines Softball team group photo wearing hard hats and holding rocks after the M Climb, mountains visible behind them at dusk" style="object-position:top center;">
+      </div>
+
+      <!-- Campus Stats -->
+      <div class="sec sec--off">
+        <div class="inner">
+          <p class="eyebrow">By the Numbers</p>
+          <h2 class="sec-title">Small Campus. Outsized Impact.</h2>
+          <p class="sec-lede">~3,100 undergraduates. An R1 research university. One of the most active alumni networks in engineering. The size is a feature, not a bug.</p>
+          <div class="campus-stats">
+            <div class="campus-stat">
+              <div class="campus-stat-num">1874</div>
+              <div class="campus-stat-lbl">Founded</div>
+            </div>
+            <div class="campus-stat">
+              <div class="campus-stat-num">~3,100</div>
+              <div class="campus-stat-lbl">Undergraduates</div>
+            </div>
+            <div class="campus-stat">
+              <div class="campus-stat-num">120+</div>
+              <div class="campus-stat-lbl">Student Organizations</div>
+            </div>
+            <div class="campus-stat">
+              <div class="campus-stat-num">14</div>
+              <div class="campus-stat-lbl">NCAA Sports</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Final CTA -->
+      <div class="cta-band">
+        <p class="cta-band-title">Ready to Be an Oredigger?</p>
+        <p class="cta-band-body">Golden, Colorado is waiting. So is Coach Echo-Hawk. Start the conversation today.</p>
+        <a href="https://minesathletics.com/sb_output.aspx?form=8" target="_blank" rel="noopener" class="btn-gold">Start the Questionnaire →</a>
+        <span class="cta-fine">Takes about 5 minutes.</span>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div>
+        <div class="footer-wordmark">MINES <em>SOFTBALL</em></div>
+        <p class="footer-tagline">Colorado School of Mines &nbsp;·&nbsp; Golden, Colorado &nbsp;·&nbsp; NCAA Division II &nbsp;·&nbsp; Rocky Mountain Athletic Conference</p>
+        <a href="https://minesathletics.com/sb_output.aspx?form=8" target="_blank" rel="noopener" class="btn-gold" style="font-size:0.875rem;">Get Recruited →</a>
+      </div>
+      <div>
+        <h2 class="footer-heading">Quick Links</h2>
+        <ul class="footer-links">
+          <li><a href="https://minesathletics.com/sports/softball" target="_blank" rel="noopener">Official Softball Page</a></li>
+          <li><a href="https://minesathletics.com/sports/softball/roster/coaches/tobin-echo-hawk/1118" target="_blank" rel="noopener">Coach Echo-Hawk Bio</a></li>
+          <li><a href="https://minesathletics.com/facilities/joe-coors-jr-softball-field/11" target="_blank" rel="noopener">Joe Coors Jr. Field</a></li>
+          <li><a href="https://minesathletics.com/facilities/city-of-golden/16" target="_blank" rel="noopener">City of Golden</a></li>
+          <li><a href="https://www.mines.edu/admissions/" target="_blank" rel="noopener">Admissions at Mines</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2 class="footer-heading">Contact</h2>
+        <ul class="footer-links">
+          <li><a href="https://minesathletics.com/sb_output.aspx?form=8" target="_blank" rel="noopener">Recruiting Questionnaire</a></li>
+          <li><a href="https://minesathletics.com" target="_blank" rel="noopener">minesathletics.com</a></li>
+          <li><a href="https://www.mines.edu" target="_blank" rel="noopener">mines.edu</a></li>
+          <li><a href="mailto:athletics@mines.edu">athletics@mines.edu</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Colorado School of Mines Athletics. All rights reserved.</p>
+      <p>1500 Illinois St, Golden, CO 80401</p>
+    </div>
+  </footer>
+
+  <!-- MOBILE STICKY CTA -->
+  <div class="mobile-cta" id="mobile-cta" role="complementary" aria-label="Recruiting call to action">
+    <p class="mobile-cta-text">Play for Mines</p>
+    <a href="https://minesathletics.com/sb_output.aspx?form=8" target="_blank" rel="noopener" class="btn-gold" style="font-size:0.8125rem;padding:10px 20px;flex-shrink:0;">Start Questionnaire →</a>
+    <button class="mobile-cta-close" id="mobile-cta-close" aria-label="Dismiss">✕</button>
+  </div>
+
+  <script>
+    // ── Tab navigation ─────────────────────────────────────
+    const tabs   = document.querySelectorAll('.tab-btn');
+    const panels = document.querySelectorAll('.tab-panel');
+
+    function activateTab(id) {
+      tabs.forEach(t => {
+        const on = t.dataset.tab === id;
+        t.classList.toggle('active', on);
+        t.setAttribute('aria-selected', String(on));
+      });
+      panels.forEach(p => {
+        p.classList.toggle('active', p.id === 'panel-' + id);
+      });
+      history.replaceState(null, '', '#' + id);
+    }
+
+    tabs.forEach(tab => {
+      tab.addEventListener('click', () => activateTab(tab.dataset.tab));
+      tab.addEventListener('keydown', e => {
+        const arr = Array.from(tabs);
+        const i   = arr.indexOf(tab);
+        if (e.key === 'ArrowRight') {
+          e.preventDefault();
+          const next = arr[(i + 1) % arr.length];
+          next.focus();
+          activateTab(next.dataset.tab);
+        }
+        if (e.key === 'ArrowLeft') {
+          e.preventDefault();
+          const prev = arr[(i - 1 + arr.length) % arr.length];
+          prev.focus();
+          activateTab(prev.dataset.tab);
+        }
+      });
+    });
+
+    // Restore from URL hash on load
+    const hash = location.hash.replace('#', '');
+    if (hash && document.getElementById('panel-' + hash)) {
+      activateTab(hash);
+    }
+
+    // ── Mobile CTA dismiss ─────────────────────────────────
+    document.getElementById('mobile-cta-close').addEventListener('click', () => {
+      document.getElementById('mobile-cta').style.display = 'none';
+      document.body.style.paddingBottom = '0';
+    });
+  </script>
+
+  <!-- TWEAKS PANEL -->
+  <script type="text/babel" src="tweaks-panel.jsx"></script>
+  <script type="text/babel">
+    const TWEAK_DEFAULTS = /*EDITMODE-BEGIN*/{
+      "heroImage": "team",
+      "accentColor": "#C8960C",
+      "coachBioLength": "full",
+      "showArchiveLink": true
+    }/*EDITMODE-END*/;
+
+    function MinesTweaks() {
+      const [t, setTweak] = useTweaks(TWEAK_DEFAULTS);
+
+      React.useEffect(() => {
+        // Hero image
+        const bg = document.querySelector('.hero-bg');
+        if (bg) bg.style.backgroundImage = t.heroImage === 'team'
+          ? "url('uploads/Team.png')"
+          : "url('uploads/M Climb Softball.jpg')";
+        // Accent color
+        document.documentElement.style.setProperty('--gold', t.accentColor);
+        const lightMap = { '#C8960C':'#F0B429', '#F0B429':'#F5C842', '#BDBCBC':'#E0E0E0', '#09396C':'#1a5fa8' };
+        document.documentElement.style.setProperty('--gold-light', lightMap[t.accentColor] || '#F0B429');
+        // Coach bio length
+        const full  = document.getElementById('coach-bio-full');
+        const short = document.getElementById('coach-bio-short');
+        if (full)  full.style.display  = t.coachBioLength === 'full'      ? '' : 'none';
+        if (short) short.style.display = t.coachBioLength === 'condensed' ? '' : 'none';
+        // Archive CTA
+        const arch = document.getElementById('archive-link-section');
+        if (arch) arch.style.display = t.showArchiveLink ? '' : 'none';
+      }, [t]);
+
+      return (
+        <TweaksPanel title="Tweaks">
+          <TweakSection title="Hero">
+            <TweakRadio
+              id="heroImage" label="Background Photo"
+              value={t.heroImage}
+              onChange={v => setTweak('heroImage', v)}
+              options={[{value:'team',label:'Team Photo'},{value:'mclimb',label:'M Climb'}]}
+            />
+          </TweakSection>
+          <TweakSection title="Style">
+            <TweakColor
+              id="accentColor" label="Accent Color"
+              value={t.accentColor}
+              onChange={v => setTweak('accentColor', v)}
+              options={['#C8960C','#F0B429','#BDBCBC','#09396C']}
+            />
+          </TweakSection>
+          <TweakSection title="Content">
+            <TweakRadio
+              id="coachBioLength" label="Coach Bio Length"
+              value={t.coachBioLength}
+              onChange={v => setTweak('coachBioLength', v)}
+              options={[{value:'full',label:'Full'},{value:'condensed',label:'Short'}]}
+            />
+            <TweakToggle
+              id="showArchiveLink" label="Show Archive CTA"
+              value={t.showArchiveLink}
+              onChange={v => setTweak('showArchiveLink', v)}
+            />
+          </TweakSection>
+        </TweaksPanel>
+      );
+    }
+
+    const tweaksMount = document.createElement('div');
+    document.body.appendChild(tweaksMount);
+    ReactDOM.createRoot(tweaksMount).render(<MinesTweaks />);
+  </script>
+
+  <script>
+  (function(){
+    var GRADS=[
+      {year:'2025–26',name:'Kendall Aragon',pos:'OF',deg:'Chemical Engineering (B.S.)&nbsp;&middot;&nbsp;STEM Education (M.S.)',dual:true,era:'recent'},
+      {year:'2025–26',name:'Taylor Wayne',pos:'P/UTIL',deg:'Mechanical Engineering (B.S.)&nbsp;&middot;&nbsp;Mechanical Engineering (M.S.)',dual:true,era:'recent'},
+      {year:'2025–26',name:'Kat Miller',pos:'P',deg:'Quantitative Biosciences &amp; Engineering',dual:false,era:'recent'},
+      {year:'2024–25',name:'Cassidy Chvatal',pos:'1B/OF',deg:'Mechanical Engineering',dual:false,era:'recent'},
+      {year:'2024–25',name:'Kailey Morales',pos:'C',deg:'Mechanical Engineering',dual:false,era:'recent'},
+      {year:'2024–25',name:'Hannah Roberts',pos:'INF',deg:'Metallurgical &amp; Materials Engineering',dual:false,era:'recent'},
+      {year:'2024–25',name:'Lexie Semeyn',pos:'C/UTIL',deg:'Chemical Engineering',dual:false,era:'recent'},
+      {year:'2024–25',name:'Allison Westbrook',pos:'P',deg:'Mechanical Engineering',dual:false,era:'recent'},
+      {year:'2023–24',name:'Sadriena Rodriguez',pos:'P',deg:'Civil Engineering (B.S.)&nbsp;&middot;&nbsp;Eng. Technology &amp; Management (M.S.)',dual:true,era:'recent'},
+      {year:'2023–24',name:'Trystin Oshiro-Sano',pos:'INF',deg:'Civil Engineering',dual:false,era:'recent'},
+      {year:'2023–24',name:'Sara Larson',pos:'INF',deg:'Computer Science',dual:false,era:'recent'},
+      {year:'2023–24',name:'Allison Westbrook',pos:'P',deg:'Mechanical Engineering',dual:false,era:'recent'},
+      {year:'2023–24',name:'Sidney Wilson',pos:'INF',deg:'Quantitative Biosciences &amp; Engineering',dual:false,era:'recent'},
+      {year:'2023–24',name:'Kayleigh Krueger',pos:'1B',deg:'Civil Engineering',dual:false,era:'recent'},
+      {year:'2022–23',name:'Lauren Decker',pos:'P/UTIL',deg:'Computer Science',dual:false,era:'recent'},
+      {year:'2022–23',name:'Sadriena Rodriguez',pos:'P',deg:'Civil Engineering (B.S.)&nbsp;&middot;&nbsp;Eng. Technology &amp; Management (M.S.)',dual:true,era:'recent'},
+      {year:'2022–23',name:'Renata Boyd',pos:'OF',deg:'Computer Science',dual:false,era:'recent'},
+      {year:'2022–23',name:'Aubree Karraker',pos:'C',deg:'Economics',dual:false,era:'recent'},
+      {year:'2022–23',name:'Ellaena Rodriguez',pos:'INF',deg:'Metallurgical &amp; Materials Eng. (B.S.)&nbsp;&middot;&nbsp;Engineering &amp; Technology Management (M.S.)',dual:true,era:'recent'},
+      {year:'2022–23',name:'Kailey Robb',pos:'UTIL',deg:'Metallurgical &amp; Materials Engineering',dual:false,era:'recent'},
+      {year:'2022–23',name:'Grace Gonzales',pos:'C/1B',deg:'Chemical Engineering',dual:false,era:'recent'},
+      {year:'2022–23',name:'Emilee Sloan',pos:'OF',deg:'Environmental Engineering (B.S.)&nbsp;&middot;&nbsp;Earth Resource Development Eng. (M.S.)',dual:true,era:'recent'},
+      {year:'2021–22',name:'Claire Smith',pos:'INF',deg:'Civil Engineering',dual:false,era:'mid'},
+      {year:'2021–22',name:'Sam Wade',pos:'INF/C',deg:'Mechanical Engineering',dual:false,era:'mid'},
+      {year:'2020–21',name:'Sydney Marchando',pos:'P',deg:'Chemical Engineering',dual:false,era:'mid'},
+      {year:'2020–21',name:'Kylie Redding',pos:'P/UTIL',deg:'Mechanical Engineering',dual:false,era:'mid'},
+      {year:'2020–21',name:'Clara Larson',pos:'INF',deg:'Computer Science',dual:false,era:'mid'},
+      {year:'2020–21',name:'Stefanie Brunello',pos:'UTIL',deg:'Computational &amp; Applied Mathematics',dual:false,era:'mid'},
+      {year:'2020–21',name:'Megan Dickson',pos:'C',deg:'Civil Engineering',dual:false,era:'mid'},
+      {year:'2019–20',name:'Kelsey Buechler',pos:'OF',deg:'Environmental Engineering',dual:false,era:'early'},
+      {year:'2019–20',name:'Claire Stringfellow',pos:'P',deg:'Metallurgical &amp; Materials Engineering',dual:false,era:'early'},
+      {year:'2018–19',name:'Dani Valerio',pos:'OF',deg:'Chemical Engineering',dual:false,era:'early'},
+      {year:'2018–19',name:'Boston Ludlow',pos:'1B',deg:'Metallurgical &amp; Materials Engineering',dual:false,era:'early'},
+      {year:'2018–19',name:'Katie Leiker',pos:'OF',deg:'Mechanical Engineering',dual:false,era:'early'},
+      {year:'2018–19',name:'Loren Dempsey',pos:'C',deg:'Chemical Engineering',dual:false,era:'early'},
+      {year:'2018–19',name:'Maddie Rogers',pos:'P',deg:'Computer Science',dual:false,era:'early'},
+      {year:'2018–19',name:'Kara Jones',pos:'C',deg:'Chemical &amp; Biochemical Engineering',dual:false,era:'early'},
+      {year:'2017–18',name:'Pua Fujinaga',pos:'INF',deg:'Civil Engineering',dual:false,era:'early'},
+      {year:'2017–18',name:'Brielle Asato',pos:'INF',deg:'Environmental Engineering',dual:false,era:'early'},
+      {year:'2017–18',name:'Hallie Smith',pos:'P',deg:'Petroleum Engineering',dual:false,era:'early'},
+      {year:'2017–18',name:'Sonoma Toot',pos:'OF',deg:'Metallurgical &amp; Materials Engineering',dual:false,era:'early'},
+      {year:'2016–17',name:'Paige Noehring',pos:'OF',deg:'Mechanical Engineering',dual:false,era:'early'}
+    ];
+    var DEGS=[
+      {label:'Mechanical Engineering',count:9},
+      {label:'Civil Engineering',count:7},
+      {label:'Chemical Engineering',count:7},
+      {label:'Metallurgical &amp; Materials Eng.',count:6},
+      {label:'Computer Science',count:5},
+      {label:'Environmental Engineering',count:3},
+      {label:'Quantitative Biosciences &amp; Eng.',count:2},
+      {label:'Other STEM',count:3}
+    ];
+    function renderChart(){
+      var el=document.getElementById('grad-deg-chart');
+      if(!el) return;
+      var max=9;
+      el.innerHTML=DEGS.map(function(d){
+        var pct=Math.round(d.count/max*100);
+        return '<div class="deg-bar-row">'
+          +'<div class="deg-bar-label">'+d.label+'</div>'
+          +'<div class="deg-bar-track"><div class="deg-bar-fill" style="width:'+pct+'%"></div></div>'
+          +'<div class="deg-bar-count">'+d.count+'</div>'
+          +'</div>';
+      }).join('');
+    }
+    function renderRoster(){
+      var byYear={};
+      GRADS.forEach(function(g){
+        if(!byYear[g.year]) byYear[g.year]=[];
+        byYear[g.year].push(g);
+      });
+      var el=document.getElementById('grad-roster');
+      if(!el) return;
+      el.innerHTML=Object.keys(byYear).map(function(yr,idx){
+        var ys=byYear[yr];
+        var open=(idx===0);
+        return '<div class="grad-acc-item">'
+          +'<button class="grad-acc-btn'+(open?' open':'')+'" onclick="toggleGradAcc(this)">'
+          +'<span class="grad-acc-year">'+yr+'</span>'
+          +'<span class="grad-acc-count">'+ys.length+(ys.length>1?' graduates':' graduate')+'</span>'
+          +'<span class="grad-acc-chevron">&#9660;</span>'
+          +'</button>'
+          +'<div class="grad-acc-body'+(open?' open':'')+'">'
+          +ys.map(function(g){
+            return '<div class="grad-row">'
+              +'<div class="grad-name">'+g.name+'</div>'
+              +'<div class="grad-pos-cell"><span class="grad-pos">'+g.pos+'</span></div>'
+              +'<div class="grad-deg">'+g.deg+(g.dual?'<span class="grad-dual-badge">B.S.+M.S.</span>':'')+'</div>'
+              +'</div>';
+          }).join('')
+          +'</div>'
+          +'</div>';
+      }).join('');
+    }
+    window.toggleGradAcc=function(btn){
+      var body=btn.nextElementSibling;
+      var isOpen=btn.classList.contains('open');
+      btn.classList.toggle('open',!isOpen);
+      body.classList.toggle('open',!isOpen);
+    };
+    renderChart();
+    renderRoster();
+  })();
+  </script>
+
+  <script>
+  (function(){
+    var audio   = document.getElementById('chasing-dreams-audio');
+    var playBtn = document.getElementById('audio-play-btn');
+    var icon    = document.getElementById('audio-icon');
+    var bar     = document.getElementById('audio-progress-bar');
+    var wrap    = document.getElementById('audio-progress-wrap');
+    var timeEl  = document.getElementById('audio-time');
+    var closeBtn= document.getElementById('audio-close-btn');
+    var ribbon  = document.getElementById('audio-ribbon');
+    if (!audio) return;
+    function fmt(s){ var m=Math.floor(s/60),sc=Math.floor(s%60); return m+':'+(sc<10?'0':'')+sc; }
+    playBtn.addEventListener('click', function(){
+      if (audio.paused){ audio.play(); icon.innerHTML='&#9646;&#9646;'; }
+      else { audio.pause(); icon.innerHTML='&#9654;'; }
+    });
+    audio.addEventListener('timeupdate', function(){
+      if (!audio.duration) return;
+      bar.style.width=(audio.currentTime/audio.duration*100)+'%';
+      if(timeEl) timeEl.textContent=fmt(audio.currentTime);
+    });
+    audio.addEventListener('ended', function(){
+      icon.innerHTML='&#9654;'; bar.style.width='0%';
+      if(timeEl) timeEl.textContent='0:00';
+    });
+    wrap.addEventListener('click', function(e){
+      if (!audio.duration) return;
+      var rect=wrap.getBoundingClientRect();
+      audio.currentTime=Math.max(0,Math.min(1,(e.clientX-rect.left)/rect.width))*audio.duration;
+    });
+    closeBtn.addEventListener('click', function(){
+      audio.pause(); ribbon.classList.add('hidden');
+    });
+  })();
+  </script>
+</body>
+</html>
